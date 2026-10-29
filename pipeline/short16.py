@@ -73,6 +73,13 @@ for sh in SS.SHORTS:
         for j, (cid, ss, cx) in enumerate(shots):
             d = round((a0 + (b0 - a0) * (j + 1) / len(shots) - acc) * FPS) / FPS
             clip = f"{CLIPS}/{cid}.mp4"; box = META.get(str(cid), {}).get("box", "iw:ih:0:0")
+            cuts = META.get(str(cid), {}).get("cuts", []); cdur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", clip]))
+            def ok(a):  # never include a <1.2 s fragment of a source shot (reads as a glitch)
+                pts = [a] + [c for c in cuts if a + 0.05 < c < a + d - 0.05] + [a + d]
+                return all(pts[k + 1] - pts[k] >= 1.2 for k in range(len(pts) - 1))
+            if not ok(ss):
+                cands = [c for c in (ss + k * 0.25 * sg for k in range(1, 17) for sg in (1, -1)) if 0 <= c <= cdur - d - 0.4 and ok(c)]
+                if cands: print(f"MOVE {cid} {ss} -> {cands[0]:.2f}", flush=True); ss = cands[0]
             rate = f"minterpolate=fps={FPS}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1" if fps_of(clip) < 28 else f"fps={FPS}"
             vf = (f"crop={box},crop=min(iw\\,ih*9/16):ih:(iw-min(iw\\,ih*9/16))*{cx}:0,{rate},scale={W}:{H}:flags=lanczos,setsar=1,{GRADE}")
             out = f"{wd}/v{len(segs):02d}.mp4"; n = int(round(d * FPS))
@@ -140,5 +147,5 @@ for sh in SS.SHORTS:
     run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", f"{wd}/raw.mp4", "-i", f"{wd}/mix.wav",
          "-vf", f"tpad=stop_mode=clone:stop_duration=2,ass={wd}/subs.ass,fade=t=out:st={TOTAL - 0.4:.2f}:d=0.4", "-t", f"{TOTAL:.3f}",
          "-c:v", "libx264", "-preset", "slow", "-crf", "19", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out])
-    json.dump(dict(total=TOTAL, segs=[dict(t=s["t"], d=s["d"], src=s["src"]) for s in segs]), open(f"{wd}/timing.json", "w"))
+    json.dump(dict(total=TOTAL, segs=[dict(t=s["t"], d=s["d"], src=s["src"], ss=s["ss"]) for s in segs]), open(f"{wd}/timing.json", "w"))
     print(sh["id"], round(TOTAL, 1), "s ->", out, flush=True)
