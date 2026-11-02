@@ -15,3 +15,6 @@ episodes/*/*.srt
 episodes/*/x265_2pass.log*
 pipeline/package-lock.json
 episodes/*/nat/
+episodes/*/*.log
+episodes/*/gspec_new.json
+episodes/*/thumb_*.jpg
