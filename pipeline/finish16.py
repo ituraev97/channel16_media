@@ -77,7 +77,7 @@ for i, (txt, shots, o) in enumerate(LINES):
         add(a0, b0, "Kick", r"{\an7" + mv.format(y=846).replace("76", "106").replace("96", "126") + r"\fad(250,300)}" + t2, 3)
         add(a0, b0, "Head", r"{\an7" + mv.format(y=878).replace("76", "106").replace("96", "126") + r"\fad(250,300)}" + t1, 3)
 add(TOTAL - 4.2, TOTAL, "Credit", r"{\fad(400,0)}" + META.get("credit", ""), 5)
-add(0.6, 7.0, "Credit", r"{\fad(400,400)\an9\pos(1880,40)\fs20}Footage: U.S. Coast Guard via DVIDS · Independent channel, not affiliated with the USCG", 5)
+add(0.6, 7.0, "Credit", r"{\fad(400,400)\an9\pos(1880,40)\fs20}" + META.get("plate", "Footage: U.S. Coast Guard via DVIDS · Independent channel, not affiliated with the USCG"), 5)
 open("subs.ass", "w", encoding="utf-8").write(head + "\n".join(ev) + "\n")
 open("subs_en.srt", "w", encoding="utf-8").write("\n".join(srt))
 
