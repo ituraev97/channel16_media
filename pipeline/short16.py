@@ -66,6 +66,10 @@ for sh in SS.SHORTS:
         a = librosa.resample(np.concatenate(parts), orig_sr=24000, target_sr=SR)
         starts.append(t); durs.append(len(a) / SR); vo.append(a); t += len(a) / SR + (0.45 if kind in ("punch", "slow") else 0.28)
     TOTAL = t + 1.6
+    # RULE: every Short must run >= 61.5 s so it qualifies for TikTok Creator Rewards (videos over 1 minute) — write a longer script, never pad with silence
+    MIN = float(os.environ.get("MIN_SHORT_SEC", "61.5"))
+    if TOTAL < MIN:
+        raise SystemExit(f"{sh['id']}: {TOTAL:.1f} s is shorter than {MIN} s — lengthen the script (about 200–230 words) and run again")
     # ---- picture: static 9:16 crops, cut points spread evenly over each line
     segs, acc = [], 0.0
     for li, (txt, shots, kind) in enumerate(sh["lines"]):
@@ -99,8 +103,8 @@ for sh in SS.SHORTS:
             e = s + durs[li] * len(c) / tot
             ev.append(f"Dialogue: 3,{ts(s)},{ts(e - 0.01)},Cap,,0,0,0,,{{\\an5\\pos(540,1240)\\fscx90\\fscy90\\t(0,80,\\fscx100\\fscy100)}}{c.upper()}")
             s = e
-    ev.append(f"Dialogue: 5,{ts(TOTAL - 2.2)},{ts(TOTAL)},CTA,,0,0,0,,{{\\an5\\pos(540,1480)\\fad(200,0)}}{SS.CTA}")
-    ev.append(f"Dialogue: 5,{ts(0.4)},{ts(5.5)},Small,,0,0,0,,{{\\fad(300,300)}}Footage: U.S. Coast Guard via DVIDS · not affiliated with the USCG")
+    ev.append(f"Dialogue: 5,{ts(TOTAL - 2.2)},{ts(TOTAL)},CTA,,0,0,0,,{{\\an5\\pos(540,1060)\\fad(200,0)}}{SS.CTA}")
+    ev.append(f"Dialogue: 5,{ts(0.4)},{ts(5.5)},Small,,0,0,0,,{{\\an7\\pos(70,172)\\fad(300,300)}}Footage: U.S. Coast Guard via DVIDS · not affiliated with the USCG")
     open(f"{wd}/subs.ass", "w", encoding="utf-8").write(HEAD + "\n".join(ev) + "\n")
     # ---- audio: voice + light score + sfx + nat
     N = int(TOTAL * SR) + SR; tt = np.arange(N) / SR; rng = np.random.default_rng(int(sh["id"][1:]))

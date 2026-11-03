@@ -1,6 +1,6 @@
 # CHANNEL 16 — production runbook
 
-One run = one long video (8–12 min, English) + 5 vertical Shorts. Read the Projects doc `claude/channel16-bible.md` first (rules, brand, voice, formats). Episode `episodes/a001-found/` is the reference for structure, pacing and style.
+One run = one long video (8–12 min, English) + 5 vertical Shorts (each 62–75 s, posted to YouTube Shorts AND TikTok). Read the Projects doc `claude/channel16-bible.md` first (rules, brand, voice, formats). Episode `episodes/a001-found/` is the reference for structure, pacing and style.
 
 ## 1. Setup (fresh container)
 ```bash
@@ -39,17 +39,23 @@ python3 $P/build_ep.py $EP $CL           # 24p clips are motion-interpolated (sl
 python3 $P/motion_check.py $EP/video_raw.mp4 $EP/timing.json $CL/clips.json   # must report 0 issues
 python3 $P/finish16.py $EP $CL           # subtitles, lower thirds, score, SFX, nat sound, -14 LUFS
 bash $P/encode.sh $EP $EP/long.mp4 95    # < 100 MB for GitHub
-python3 $P/short16.py $EP $CL            # 5 Shorts from shorts_spec.py
+python3 $P/short16.py $EP $CL            # 5 Shorts from shorts_spec.py — each must run >= 61.5 s (script refuses shorter)
 cd $P && node thumb16.mjs $EP/thumb.json $EP   # thumb_A + thumb_C
 ```
 
+## Shorts for TikTok monetization (owner rule, Nov 2026)
+- TikTok Creator Rewards pays only for videos over 1 minute, so every Short is 62–75 s: about 200–230 spoken words, 13–16 lines, 20–28 shots, ONE rescue told as a mini case (hook question → what happened → the call → conditions → the search/approach → the hoist → outcome → one survival lesson → "Follow for more real rescues"). Never pad with silence, freeze frames or repeated shots — the length must come from real story beats.
+- Hook in the first 1.5 s (on-screen hook text + the most dramatic shot). Something new on screen every 2–3 s.
+- TikTok safe zones: nothing important below y 1440 or right of x 940 between y 700–1700; captions centre at y≈1240, CTA at y≈1060.
+
 ## 5. QA (do not skip)
-- motion_check: 0 issues (repeats, jumps, graphic drift). Re-run on each Short too.
+- motion_check: 0 issues (repeats, jumps, graphic drift). Re-run on each Short too, and ffprobe each Short: duration must be ≥ 61.5 s.
 - Contact sheet every 8 s: no gore, no unreadable overlaps, subtitles inside frame, lower thirds sized to text.
 - `ffmpeg -i long.mp4 -af ebur128 -f null -` → about −14 LUFS.
 - Thumbnail at 168×94: big words still read; nothing in the bottom-right corner.
 
 ## 6. Upload + schedule
 - Branch = weekday of the ET publish date (`drop-mon` … `drop-sun`), orphan commit with only that day's files, force-push. URL: `https://raw.githubusercontent.com/ituraev97/channel16_media/drop-XXX/<file>`.
-- Metricool (brand of CHANNEL 16 — to be created once the channel exists): long 12:00 ET, Shorts 09:00, 11:00, 15:00, 17:00, 21:00 ET; madeForKids false, category EDUCATION.
+- Metricool brand CHANNEL 16 = blogId 7743228 (YouTube + TikTok @channel16rescues): long 12:00 ET (YouTube only), Shorts 09:00, 11:00, 15:00, 17:00, 21:00 ET; madeForKids false, category EDUCATION.
+- Each Short = ONE post with providers [youtube, tiktok]; tiktokData {title (≤90 chars), privacyOption PUBLIC_TO_EVERYONE, disableComment false, disableDuet false, disableStitch false, autoAddMusic false, isAigc false}; videoCoverMilliseconds 1500. If the combined post is rejected, make two posts (one per network) for the same time.
 - Commit `episode.py`, `shorts_spec.py`, `sources.md`, `thumb.json`, `youtube_description.txt`, updated `used_clips.json` and `clips.json` to `main` (never video files).
