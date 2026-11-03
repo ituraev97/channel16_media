@@ -78,3 +78,42 @@ Every claim below was read on the page listed. Rescued people are not named.
 
 ## Independent fact-check
 - Separate agent checked every line, graphic and shot against these pages and frames: 23 issues found (e.g., "800 miles to get here" was the whole mission; map label read as summit height; Shorts hooks overstated fuel/water time; caption rows truncated; shots under the wrong caption) — all fixed before the build.
+
+## TikTok versions (62–75 s, Nov 4, 2026) — shorts_tiktok_spec.py
+Built from the same rescues where the footage can fill 62 s without repeats. The Walrus clip (950715) is 44.7 s and the Mount Larrabee clip (1012192) has ~31 s of clean footage, and the sixth rescue of the long video (977299, Ruby Princess) has only ~60 s before the end seals, so s3 and s5 use two other verified rescues (below).
+
+### Sea Ranger — re-read for the TikTok version
+- gCaptain (above): 10:17 a.m. the Arctic District command center in Juneau received an initial distress call reporting the vessel was taking on water; the HC-130 made contact about 1:08 p.m., crew said they weren't in immediate danger, aircrew dropped a dewatering pump and returned; 3:57 p.m. adrift, smoke in the engine room, continued water intake, dewatering pumps inoperable; MH-60 + second HC-130 launched; 7:42 p.m. on scene, hoisted all four; taken to Cordova for medical evaluation; no injuries. Lt. Evan Sutton: "the best possible outcome"; mariners well-equipped; "the importance of having appropriate lifesaving and communications equipment on hand."
+- Hoist-camera footage 972655 shows the swimmer lowered to the deck first, then the basket, and the swimmer hoisted last.
+
+### Anacapa Island — re-read for the TikTok version
+- USCG release (above): 14-foot yellow kayak; overturned about a half-mile off Arch Rock; called Sector Los Angeles-Long Beach at 11:17 p.m. Friday from the water; adrift and taking on water about four hours; wetsuits, life jackets, no radio, within cellphone range; Sector issued an urgent marine information broadcast and launched crews from Air Station Ventura and Station Channel Islands; TowBoatUS Ventura also responded; Jayhawk on scene at midnight, hoisted both from the water, to Oxnard Airport, Ventura County EMS, stable; TowBoatUS Ventura recovered the kayak and the kayakers' belongings. Lt. Cmdr. Jason Caprioli: "This case highlights the importance of carrying multiple reliable means of communication while on the water"; urged a signaling device and a VHF-FM marine radio.
+
+### TIME-AUT — three mariners off Cape Hatteras (Dec 11–12, 2024) — TikTok s3 (replaces Walrus)
+- USCG release (Dec 13, 2024): https://www.news.uscg.mil/Press-Releases/Article/3999825/multimedia-release-coast-guard-rescues-3-mariners-154-miles-southeast-of-cape-h/
+  - 59-foot sailing vessel TIME-AUT, three mariners, about 154 miles southeast of Cape Hatteras
+  - 3 p.m. Wednesday: Sector Charleston alerted the Fifth District command center the vessel was in heavy weather and at risk of capsizing; the mariners initially said they were not in distress
+  - Early Thursday morning they requested to abandon the vessel; HC-130 Hercules + MH-60 Jayhawk from Air Station Elizabeth City and the crew of Coast Guard Cutter Richard Snyder launched
+  - Hercules and Jayhawk on scene 9:30 a.m.; Jayhawk hoisted all three at 10 a.m.; no injuries
+  - Aboard: life jackets, life rafts, an EPIRB, Starlink communications
+  - On scene: winds 17–23 mph, seas 6–10 feet
+- FOX Weather via FOX6: https://www.fox6now.com/news/coast-guard-rescues-3-people-abandoning-ship-150-miles-off-north-carolina-coast
+  - helicopter crew located them 154 miles southeast of Cape Hatteras at 9:30 a.m.; about 30 minutes later all three were aboard the aircraft
+  - video shows the mariners being lifted by cable from the open ocean; a crew member lowered to a mariner floating in the water
+  - strong cold front, gale and storm warnings far offshore
+- DVIDS 946728 (PO2 Ryan L. Noel, Air Station Elizabeth City) — same facts as the release: https://www.dvidshub.net/video/946728
+- Footage order (observed): 0–8.6 s swimmer and a survivor ride the hook up; 9–34 s cabin; 35–76 s the next pickup (swimmer goes down 39–50, in the water 51–64, both come up 71–76); 77–95 s cabin. Script frames it as "on scene now" and tells the backstory in the past tense.
+- How the hoist works: flight mechanic runs the hoist and relays commands to the pilot, who can't see directly below (Military.com, above).
+
+### Grays Harbor, Washington — Abby C / Lady Nancy (Nov 17, 2025) — TikTok s5 (replaces Mount Larrabee)
+- DVIDS 988434 "Grays Harbor Rescue": Air Station Astoria aircrew hoists four fishermen off Grays Harbor, Nov. 17, 2025, transported all four survivors (DVIDS says "from a sinking fishing vessel" and "to Air Station Astoria" — local reports below say the hoist was from the Good Samaritan boat and the patients went to Hoquiam; the script says only "flown to shore"). https://www.dvidshub.net/video/988434
+- KUOW (Nov 21, 2025): https://www.kuow.org/stories/i-thought-he-was-dead-crabbing-crew-recount-dramatic-rescue-off-washington-coast
+  - Monday morning; crabbing vessel Lady Nancy heard a distress call from the Abby C; coordinates near the entrance of Grays Harbor; Lady Nancy about 20 miles away
+  - seas "extremely rough", swells 10 to 14 feet; Abby C "took on a major wave"; the men gave their coordinates four times before crawling out the windows into the ocean
+  - two men in a life raft quickly taking on water; two in open water holding onto a survival suit
+  - Lady Nancy passed them at least once without seeing them; a crewman spotted the raft; one man let go of the survival suit and began to sink; a crewman already in a survival suit jumped in and grabbed him
+  - the co-owner (Marcus Cole) performed CPR for about two minutes before the man woke up; called it a "miracle" that the crew was found; all four evacuated to Hoquiam for treatment
+- The Daily World: https://www.thedailyworld.com/?p=102539 — Sector Columbia River watchstanders received a mayday call; Air Station Astoria and Station Grays Harbor launched; crew aboard the Lady Nancy recovered the four; Good Samaritans performed CPR on one unresponsive person who regained consciousness; Air Station Astoria hoisted all four from the Lady Nancy; treated for hypothermia and other medical issues (Harbor Regional Hospital)
+- KIRO 7: https://www.kiro7.com/news/local/coast-guard-good-samaritans-save-4-dramatic-rescue-near-grays-harbor/K6WYUDFQYBEMNMC55ZT5AUIWFA — mayday call Monday morning; Good Samaritans reached the four first; bystanders performed CPR on one unresponsive mariner
+- Trail line and "let the basket touch the boat first" (static from the rotor): Coast Guard Auxiliary Surface Guide to Helicopter Operations (above).
+- Footage: 0–5 s cabin/door, 5–14 s trail line at the door, 14–24 s and 64–68 s the Lady Nancy from above, 24–64 s baskets going down and coming up with survivors, 68–80 s swimmer, 81 s cabin. clips.json cuts for 988434 are hand-picked (helmet-camera shake gives false cuts).
