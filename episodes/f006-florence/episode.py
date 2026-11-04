@@ -1,0 +1,276 @@
+# CHANNEL 16 · STORM FILES 006 — The Rain That Wouldn't Stop (Hurricane Florence, North Carolina, September 2018)
+# Each entry: (vo_text, shots, opts). shot: C(clip, start, mode="fit"|"fill", fy=..) | G(graphic, **opts)
+# opts: gap (sec after line), tag (location/date lower third), kind (calm|punch|tense|slow|drive|question)
+C = lambda i, s, **k: (str(i), s, k)
+G = lambda name, **k: ("g:" + name, 0, k)
+
+LAUNCH = 625422   # Air Station Elizabeth City launches for a SAR case, Sept 14, 2018 (PO3 Shannon Kearney)
+PATROL = 625599   # two Jayhawk crews begin 12-hour SAR patrols, Sept 14, 2018 (Coast Guard East) — 42–62 s is pillarboxed, not used
+NEWBERN = 625741  # overflight of New Bern flooding, Sept 15, 2018, aboard a CBP helicopter (PO3 Ronald Hodges)
+ONSLOW = 625750   # Elizabeth City MH-60T hoist camera, Onslow County, Sept 15, 2018 (square-pixel copy of the 720x480 file)
+ONSLOW2 = 625791  # same mission, second file
+PENDER = 625984   # Air Station Atlantic City MH-65, Pender County, Sept 16, 2018 — PO1 Steve Maccaferri's camera
+ROCKY = 626073    # Elizabeth City MH-60T, Rocky Point: 26 adults, 11 children, 7 dogs, 4 cats (PO2 Dustin Williams)
+CLW = 626286      # Air Station Clearwater MH-60T, Rocky Point: 3 adults, 1 child, 2 dogs (PO2 Dustin Williams)
+LUCKY = 626424    # Elizabeth City, man and his dog Lucky off a rooftop, north of the Cape Fear River, Sept 17, 2018
+LUCKYH = 626635   # same rescue, hoist camera (square-pixel copy)
+ROOF = 626817     # PO2 Darren Harrity (Elizabeth City) saves a man stranded on his rooftop, Sept 17, 2018 — vertical video
+LUMB = 626278     # shallow-water response boat team, Mayfair neighborhood, Lumberton, Sept 17, 2018 (PO3 Nathan Cox)
+SECTOR = 628147   # Sector North Carolina response video (PO3 Jim Connor) — 0–24 s and 99 s+ carry burned-in text, not used
+FITZ = 627901     # CPO Brad Fitzpatrick (Air Station Atlantic City): two people and six dogs from a flooded home, Sept 19, 2018
+FITZ2 = 627892    # CPO Brad Fitzpatrick rescues people from flooded homes, Sept 19, 2018
+
+NC = [[-80.2, 36.7], [-75.3, 33.3]]                     # eastern Carolinas
+COAST = [[-79.4, 35.5], [-76.4, 33.6]]                 # Wilmington region
+EAST = [[-85.5, 45.8], [-67.5, 26.0]]                  # east coast, Florida to Cape Cod
+WRIGHTSVILLE = [-77.80, 34.21]; WILMINGTON = [-77.94, 34.23]; ELIZABETHTOWN = [-78.61, 34.63]; NEWBERN_LL = [-77.04, 35.11]
+LUMBERTON = [-79.01, 34.62]; BURGAW = [-77.93, 34.55]; ROCKYPT = [-77.89, 34.44]; LORIS = [-78.89, 34.06]; SWANSBORO = [-77.12, 34.69]
+ECITY = [-76.25, 36.29]; ATLCITY = [-74.42, 39.36]; CAPECOD = [-70.52, 41.66]; SAVANNAH = [-81.20, 32.13]; CLEARWATER = [-82.69, 27.91]
+FAYETTEVILLE = [-78.88, 35.05]
+
+LINES = [
+ # ---------------- COLD OPEN ----------------
+ ("September seventeenth, twenty eighteen. North of the Cape Fear River, in North Carolina. Three days after Hurricane Florence came ashore.",
+  [C(LUCKY, 6), C(LUCKY, 40)], dict(tag=("NORTH OF THE CAPE FEAR RIVER, N.C.", "SEPT 17, 2018"), kind="calm")),
+ ("The storm has moved on. The water hasn't.",
+  [C(LUCKY, 105)], dict(kind="punch")),
+ ("Down there, a man and his dog, Lucky, are waiting on a roof. When the flooding began, they were in a van. They climbed on top of it, and then onto the roof of a building.",
+  [C(LUCKY, 132), C(LUCKY, 150), C(LUCKY, 170)], dict(kind="tense")),
+ ("A Jayhawk crew from Air Station Elizabeth City puts its rescue swimmer down beside them.",
+  [C(LUCKY, 54), C(LUCKY, 63)], dict(kind="drive")),
+ ("Then the basket comes down.",
+  [C(LUCKY, 120)], dict(kind="slow")),
+ ("Florence came ashore as only a Category one hurricane. But it became the wettest tropical cyclone on record for the Carolinas.",
+  [C(LUCKY, 246), C(LUCKY, 252)], dict(kind="calm")),
+ ("This is the story of the flood that came after the hurricane, and the crews who came for the people caught in it.",
+  [G("title", title="The rain that<br><span style=\"color:#FF5B14\">wouldn't stop</span>", sub="STORM FILES · 006", size=220)], dict(kind="slow", gap=2.6)),
+
+ # ---------------- I. THE STORM ----------------
+ ("It starts at the end of August, as a tropical wave off the coast of West Africa.",
+  [G("chapter", case="STORM FILES", n="I", t="THE STORM")], dict(kind="calm")),
+ ("On August thirty-first, it becomes a tropical depression. The next day, Tropical Storm Florence. On September tenth, far out over the Atlantic, its winds reach a hundred forty miles an hour.",
+  [G("timeline", kicker="HURRICANE FLORENCE · 2018", title="FROM AFRICA TO THE CAROLINAS",
+     events=[dict(y="AUG 31", t="Tropical depression forms"), dict(y="SEP 1", t="Tropical Storm Florence"), dict(y="SEP 10", t="140 mph, open Atlantic"), dict(y="SEP 14", t="Landfall, North Carolina")],
+     footer="SOURCES: NWS WILMINGTON · NOAA WEATHER PREDICTION CENTER")], dict(kind="calm")),
+ ("But on its way in, Florence changes. It loses strength. It grows larger. And it slows down.",
+  [G("cards3", kicker="HURRICANE FLORENCE", title="WEAKER, BIGGER, SLOWER",
+     cards=[dict(h="140 MPH", t="Winds on Sept. 10", s="NWS WILMINGTON"), dict(h="90 MPH", t="Sustained winds at landfall", s="CATEGORY 1"), dict(h="6 MPH", t="Moving west at landfall", s="NHC ADVISORY 60A")],
+     footer="SOURCES: NWS WILMINGTON · NATIONAL HURRICANE CENTER · NASA")], dict(kind="tense")),
+ ("At seven-fifteen on the morning of Friday, September fourteenth, its eye crosses Wrightsville Beach, just east of Wilmington. Sustained winds near ninety miles an hour.",
+  [G("map", map=dict(bounds=COAST, rings=[dict(ll=WRIGHTSVILLE, r=50, n=3, d=0.3, color="#FF5B14")],
+     cities=[dict(ll=WRIGHTSVILLE, name="WRIGHTSVILLE BEACH", sub="LANDFALL · 7:15 A.M.", d=0.4, color="#FF5B14"), dict(ll=WILMINGTON, name="WILMINGTON", d=0.8, anchor="end"),
+             dict(ll=ELIZABETHTOWN, name="ELIZABETHTOWN", d=1.0, anchor="end")]),
+     kicker="FRIDAY, SEPTEMBER 14, 2018", title="LANDFALL")], dict(kind="drive")),
+ ("At eight o'clock, the National Hurricane Center has it moving west at just six miles an hour. And one of its headlines that morning is a warning about the water.",
+  [G("callcard", kicker="NATIONAL HURRICANE CENTER · ADVISORY 60A", title="8:00 A.M. EDT · FRIDAY, SEPT. 14",
+     rows=[["POSITION", "ABOUT 10 MI S OF WILMINGTON"], ["WINDS", "90 MPH"], ["MOVEMENT", "WEST AT 6 MPH"], ["ALSO IN THE HEADLINES", "CATASTROPHIC FRESHWATER FLOODING EXPECTED"]],
+     footer="SOURCE: NHC ADVISORY ARCHIVE")], dict(kind="calm")),
+ ("It's this: catastrophic freshwater flooding expected. Forecasters called for twenty to twenty-five more inches of rain, with isolated storm totals of thirty to forty.",
+  [G("stat", a="30–40 IN", b="ISOLATED STORM TOTALS IN THE FORECAST", c="SOUTHEASTERN COASTAL N.C. INTO FAR NORTHEASTERN S.C. · SOURCE: NHC ADVISORY 60A")], dict(kind="tense")),
+ ("On the coast, the storm surge hit hard. In New Bern, on the Noose River, a surge of ten point one feet was recorded in the early hours of September fourteenth.",
+  [G("map", map=dict(bounds=NC, rings=[dict(ll=NEWBERN_LL, r=45, n=3, d=0.3, color="#FF5B14")],
+     cities=[dict(ll=NEWBERN_LL, name="NEW BERN", sub="SURGE 10.1 FT", d=0.4, color="#FF5B14"), dict(ll=WILMINGTON, name="WILMINGTON", d=0.8), dict(ll=ECITY, name="ELIZABETH CITY", d=1.0, size=28)]),
+     kicker="EARLY SEPTEMBER 14, 2018", title="THE SURGE", footer="SOURCE: WEATHER.COM")], dict(kind="tense")),
+ ("This is New Bern the next day, filmed from a Customs and Border Protection helicopter carrying two Coast Guard admirals on an assessment flight.",
+  [C(NEWBERN, 75), C(NEWBERN, 92)], dict(tag=("NEW BERN, N.C.", "SEPT 15, 2018"), kind="calm")),
+ ("And the rain kept coming. Florence stayed over the Carolinas for four days.",
+  [C(NEWBERN, 121), C(NEWBERN, 31)], dict(kind="slow")),
+ ("Near Elizabethtown, about fifty miles northwest of where Florence came ashore, one gauge measured thirty-five point nine three inches. The old North Carolina record for a tropical cyclone, from Hurricane Floyd in nineteen ninety-nine, was about twenty-four.",
+  [G("stat", a="35.93 IN", b="RAIN NEAR ELIZABETHTOWN, N.C.", c="OLD N.C. TROPICAL-CYCLONE RECORD: 24.06 IN · FLOYD, 1999 · SOURCES: NWS WILMINGTON · WEATHER.COM")], dict(kind="drive")),
+ ("Loris, South Carolina, got twenty-three point six three inches, a new South Carolina record for a tropical cyclone. And Wilmington had its wettest year on record, with more than three months of the year still to go.",
+  [G("map", map=dict(bounds=COAST, rings=[dict(ll=ELIZABETHTOWN, r=50, n=3, d=0.2, color="#FF5B14")],
+     cities=[dict(ll=ELIZABETHTOWN, name="ELIZABETHTOWN", sub="35.93 IN", d=0.3, color="#FF5B14", anchor="end"), dict(ll=LORIS, name="LORIS, S.C.", sub="23.63 IN · S.C. TROPICAL-CYCLONE RECORD", d=0.8),
+             dict(ll=WILMINGTON, name="WILMINGTON AIRPORT", sub="23.02 IN", d=1.2), dict(ll=SWANSBORO, name="SWANSBORO", sub="33 IN", d=1.5)]),
+     kicker="FLORENCE STORM TOTALS", title="THE RAIN", footer="SOURCES: NWS WILMINGTON · NASA · WEATHER.COM")], dict(kind="calm")),
+ ("NOAA's Weather Prediction Center put it plainly: due to its slow movement, Florence became the wettest known tropical cyclone on record for the Carolinas.",
+  [G("quote", q="Due to its slow movement, Florence became the wettest known tropical cyclone on record for the Carolinas.", w="NOAA WEATHER PREDICTION CENTER")], dict(kind="slow", gap=0.8)),
+
+ # ---------------- II. THE RIVERS ----------------
+ ("And all that water had to go somewhere.",
+  [G("chapter", case="STORM FILES", n="II", t="THE RIVERS")], dict(kind="calm")),
+ ("Into the rivers. The Northeast Cape Fear at Burgaw crested at twenty-five point five eight feet on September nineteenth. That's more than three feet above its crest in Floyd.",
+  [G("map", map=dict(bounds=COAST, rings=[dict(ll=BURGAW, r=45, n=3, d=0.3, color="#FF5B14")],
+     cities=[dict(ll=BURGAW, name="BURGAW", sub="25.58 FT · SEPT. 19", d=0.4, color="#FF5B14"), dict(ll=LUMBERTON, name="LUMBERTON", sub="LUMBER RIVER", d=0.9, anchor="end"),
+             dict(ll=WILMINGTON, name="WILMINGTON", d=1.2, anchor="end", dy=40), dict(ll=FAYETTEVILLE, name="FAYETTEVILLE", sub="CAPE FEAR RIVER", d=1.4, anchor="end")]),
+     kicker="AFTER THE RAIN", title="THE RIVERS RISE", footer="SOURCE: NWS WILMINGTON")], dict(kind="drive")),
+ ("The Lumber River at Lumberton crested more than a foot above its level in Hurricane Matthew, two years earlier. And the Cape Fear River crested two to six feet higher than in Matthew.",
+  [G("cards3", kicker="RIVER CRESTS · SEPTEMBER 2018", title="HIGHER THAN BEFORE",
+     cards=[dict(h="+3 FT", t="N.E. Cape Fear at Burgaw, above Floyd", s="25.58 FT · SEPT. 19"), dict(h="+1 FT", t="Lumber River at Lumberton, above Matthew", s="NEAR 25.4 FT"), dict(h="+2–6 FT", t="Cape Fear River, above Matthew", s="RECORD AT LOCK & DAM 1")],
+     footer="SOURCE: NWS WILMINGTON")], dict(kind="calm")),
+ ("So the flood didn't end when the storm did. Days after landfall, neighborhoods were still under water.",
+  [C(LUMB, 3), C(SECTOR, 27)], dict(kind="tense")),
+ ("The Coast Guard's own account of the response puts it simply. This hurricane was a flooding event, and flooding events require boats.",
+  [G("quote", q="…this hurricane was a flooding event, and flooding events require boats.", w="LT. CMDR. ACE CASTLE · U.S. COAST GUARD · THE LONG BLUE LINE")], dict(kind="slow")),
+ ("And they require helicopters.",
+  [C(LAUNCH, 44)], dict(kind="punch", gap=0.8)),
+
+ # ---------------- III. THE AIR ----------------
+ ("The helicopters went up while the storm was still over the coast.",
+  [G("chapter", case="STORM FILES", n="III", t="THE AIR")], dict(kind="calm")),
+ ("September fourteenth, the day of landfall. At Air Station Elizabeth City, a Jayhawk crew launches on a search and rescue case.",
+  [C(LAUNCH, 9), C(LAUNCH, 44), C(LAUNCH, 58)], dict(tag=("AIR STATION ELIZABETH CITY, N.C.", "SEPT 14, 2018"), kind="drive")),
+ ("Two Jayhawk crews began twelve-hour patrols that day. They medevaced a critically ill person, and searched for anyone who might need help, in tropical storm force winds and rain.",
+  [C(PATROL, 27), C(PATROL, 34), C(PATROL, 66)], dict(kind="calm")),
+ ("Crews came from up and down the coast. Elizabeth City. Atlantic City, New Jersey. Cape Cod, Massachusetts. Savannah, Georgia. And Clearwater, Florida.",
+  [G("map", map=dict(bounds=EAST, arcs=[dict(**{"from": ATLCITY, "to": WILMINGTON}, d=0.5, dur=1.0, bend=0.12), dict(**{"from": CAPECOD, "to": WILMINGTON}, d=0.7, dur=1.2, bend=0.15),
+                                        dict(**{"from": SAVANNAH, "to": WILMINGTON}, d=0.9, dur=0.9, bend=-0.12, color="#4FD1C5"), dict(**{"from": CLEARWATER, "to": WILMINGTON}, d=1.1, dur=1.2, bend=-0.15, color="#4FD1C5")],
+     cities=[dict(ll=WILMINGTON, name="NORTH CAROLINA", d=0.2, color="#FF5B14", anchor="end"), dict(ll=ECITY, name="ELIZABETH CITY", d=0.3, size=26),
+             dict(ll=ATLCITY, name="ATLANTIC CITY", d=0.5, size=26), dict(ll=CAPECOD, name="CAPE COD", d=0.7, size=26, anchor="end", dy=-50),
+             dict(ll=SAVANNAH, name="SAVANNAH", d=0.9, size=26, anchor="end"), dict(ll=CLEARWATER, name="CLEARWATER", d=1.1, size=26, anchor="end")]),
+     kicker="U.S. COAST GUARD AIR STATIONS · SEPTEMBER 2018", title="FROM UP AND DOWN THE COAST", footer="SOURCE: U.S. COAST GUARD VIA DVIDS")], dict(kind="drive")),
+ ("September fifteenth. Seven Coast Guard helicopters, four Dolphins and three Jayhawks, rescue fifty-seven people and eight pets across North Carolina.",
+  [G("stat", a="57", b="PEOPLE RESCUED BY 7 COAST GUARD HELICOPTERS · SEPT. 15", c="AND 8 PETS · 4 HH-65 DOLPHINS · 3 MH-60 JAYHAWKS · SOURCE: U.S. COAST GUARD")], dict(kind="drive")),
+ ("In Onslow County, the hoist camera on an Elizabeth City Jayhawk is looking straight down.",
+  [C(ONSLOW, 1), C(ONSLOW, 18)], dict(tag=("ONSLOW COUNTY, N.C.", "SEPT 15, 2018"), kind="calm")),
+ ("First the swimmer goes down. Then the basket.",
+  [C(ONSLOW, 28), C(ONSLOW, 57)], dict(kind="tense")),
+ ("Then it comes back up, with someone in it.",
+  [C(ONSLOW, 66), C(ONSLOW, 150)], dict(kind="calm")),
+ ("And then it goes back down again, for the next one.",
+  [C(ONSLOW2, 42), C(ONSLOW2, 112)], dict(kind="drive", gap=0.7)),
+ ("September sixteenth, in Pender County. A Dolphin crew from Air Station Atlantic City comes for a woman in a flooded home. She had run out of medication, and couldn't properly feed herself.",
+  [C(PENDER, 0.5), C(PENDER, 8.5)], dict(tag=("PENDER COUNTY, N.C.", "SEPT 16, 2018"), kind="tense")),
+ ("This is rescue swimmer Steve Maccaferri's own helmet camera. He's lowered into the flood water, and makes his way to the porch.",
+  [C(PENDER, 13.5), C(PENDER, 27), C(PENDER, 57)], dict(kind="calm")),
+ ("The basket comes down to the steps. She climbs in, and goes up.",
+  [C(PENDER, 64), C(PENDER, 74), C(PENDER, 120)], dict(kind="drive")),
+ ("The same day, at Rocky Point, an Elizabeth City Jayhawk lands in a grassy field.",
+  [C(ROCKY, 84), C(ROCKY, 102)], dict(tag=("ROCKY POINT, N.C.", "MH-60 · AIR STATION ELIZABETH CITY"), kind="drive")),
+ ("Lieutenant Weston Dodson's crew had come for a family in distress. Rescue swimmers Chris Fisher and John Fuller went out to find them.",
+  [C(ROCKY, 93), C(ROCKY, 99)], dict(kind="calm")),
+ ("Two local teachers met them, and offered to help reach more people who were stranded.",
+  [C(ROCKY, 120), C(ROCKY, 124)], dict(kind="calm")),
+ ("The crew flew families out, trip after trip. The last two of thirty-seven people that helicopter rescued were the teachers themselves.",
+  [C(ROCKY, 144), C(ROCKY, 147.5), C(ROCKY, 153)], dict(kind="drive")),
+ ("In all: twenty-six adults, eleven children, seven dogs and four cats, out of one neighborhood.",
+  [G("cards3", kicker="ROCKY POINT, N.C. · ONE JAYHAWK CREW", title="ONE NEIGHBORHOOD",
+     cards=[dict(h="26", t="Adults"), dict(h="11", t="Children"), dict(h="7 + 4", t="Dogs and cats")],
+     footer="SOURCE: U.S. COAST GUARD VIA DVIDS · THE LONG BLUE LINE")], dict(kind="calm")),
+ ("Later, a Jayhawk from Air Station Clearwater, Florida, came to the same neighborhood, for three more adults, a child, and two dogs.",
+  [C(CLW, 18), C(CLW, 24), C(CLW, 60)], dict(tag=("ROCKY POINT, N.C.", "MH-60 · AIR STATION CLEARWATER"), kind="calm")),
+ ("That day alone, Coast Guard aircrews took part in rescuing sixty-seven people and twelve pets. In seventy-two hours, a hundred thirty-three people and twenty pets.",
+  [G("timeline", kicker="COAST GUARD AIRCREWS · NORTH CAROLINA", title="THE COUNT CLIMBS",
+     events=[dict(y="SEP 15", t="57 people, 8 pets"), dict(y="SEP 16", t="67 people, 12 pets"), dict(y="72 HOURS", t="133 people, 20 pets")],
+     footer="SOURCE: U.S. COAST GUARD VIA DVIDS")], dict(kind="drive", gap=0.8)),
+
+ # ---------------- IV. THE ROOFTOPS ----------------
+ ("On Monday, September seventeenth, crews were still finding people on their roofs.",
+  [G("chapter", case="STORM FILES", n="IV", t="THE ROOFTOPS")], dict(kind="calm")),
+ ("Back to the man and his dog. From the helicopter, the street below is a river.",
+  [C(LUCKY, 200), C(LUCKY, 222)], dict(tag=("NORTH OF THE CAPE FEAR RIVER, N.C.", "SEPT 17, 2018"), kind="calm")),
+ ("In the door, the flight mechanic works the hoist, guiding the cable down to the roof.",
+  [C(LUCKY, 75), C(LUCKY, 84)], dict(kind="calm")),
+ ("The basket goes down. And it comes back up with the man inside.",
+  [C(LUCKY, 236), C(LUCKY, 255)], dict(kind="drive")),
+ ("Both of them, the man and Lucky, were rescued.",
+  [C(LUCKYH, 168)], dict(kind="slow")),
+ ("The same day, another Elizabeth City rescue swimmer, Petty Officer Darren Harrity, is lowered to a man stranded on his rooftop.",
+  [C(ROOF, 21), C(ROOF, 30), C(ROOF, 54)], dict(tag=("NORTH CAROLINA", "SEPT 17, 2018"), kind="tense")),
+ ("He gets the man into the basket. Then the swimmer follows him up.",
+  [C(ROOF, 84), C(ROOF, 100), C(ROOF, 166), C(ROOF, 186)], dict(kind="drive")),
+ ("Harrity's crew told Fox News what made that week different. The flight mechanic, Ryan Johnson, said ninety-nine point nine percent of their cases are offshore, in the middle of the ocean, with nothing else around.",
+  [G("quote", q="99.9% of our cases are done offshore in the middle of the ocean with nothing else around.", w="RYAN JOHNSON · FLIGHT MECHANIC · AIR STATION ELIZABETH CITY · VIA FOX NEWS")], dict(kind="calm")),
+ ("Over a neighborhood, there are trees and power lines to snag on. On their first roof rescue, the pilot had to hover a few feet from trees on one side, and power lines on the other.",
+  [C(ROOF, 8), C(ROOF, 12)], dict(kind="tense")),
+ ("In that rescue, the man was in Rocky Point, standing on his roof waving an American flag, as the water rose to his second floor.",
+  [G("callcard", kicker="ROCKY POINT, N.C. · ONE CREW'S FIRST ROOF RESCUE", title="WHAT THE CREW SAW",
+     rows=[["ON THE ROOF", "A MAN WAVING AN AMERICAN FLAG"], ["THE WATER", "UP TO THE SECOND FLOOR"], ["THE HAZARDS", "TREES · POWER LINES"], ["THE RESULT", "HOISTED INTO THE HELICOPTER"]],
+     footer="SOURCE: FOX NEWS, SEPT. 18, 2018")], dict(kind="calm")),
+ ("Harrity said there's definitely adrenaline involved. But, he said, we train for this type of stuff.",
+  [G("quote", q="There's definitely adrenaline involved. … We train for this type of stuff.", w="PO2 DARREN HARRITY · RESCUE SWIMMER · VIA FOX NEWS")], dict(kind="slow", gap=0.8)),
+
+ # ---------------- V. THE BOATS ----------------
+ ("Not every rescue came from the air.",
+  [G("chapter", case="STORM FILES", n="V", t="THE BOATS")], dict(kind="calm")),
+ ("The Coast Guard sent shallow-water response teams: crews with sixteen-foot aluminum boats, used to navigate flooded streets.",
+  [C(LUMB, 3), C(LUMB, 9)], dict(kind="calm")),
+ ("September seventeenth. The Mayfair neighborhood of Lumberton.",
+  [C(LUMB, 17), C(LUMB, 21)], dict(tag=("LUMBERTON, N.C.", "SEPT 17, 2018"), kind="drive")),
+ ("Families come out by boat, children in life jackets. A crew member lifts the children out.",
+  [C(LUMB, 27), C(LUMB, 36), C(LUMB, 45)], dict(kind="calm")),
+ ("And the dogs come too.",
+  [C(LUMB, 72), C(LUMB, 77)], dict(kind="punch")),
+ ("By September eighteenth, twenty-six of these boat teams, a hundred sixteen people, were working in North Carolina.",
+  [G("cards3", kicker="U.S. COAST GUARD · SEPTEMBER 18, 2018", title="BOAT TEAMS IN NORTH CAROLINA",
+     cards=[dict(h="26", t="Shallow-water response boat teams"), dict(h="116", t="Coast Guard members on those teams"), dict(h="191", t="Members at the command post in Goldsboro")],
+     footer="SOURCE: U.S. COAST GUARD NEWS RELEASE")], dict(kind="calm")),
+ ("Sector North Carolina says its boat teams rescued two hundred fifty-eight people and two hundred five pets.",
+  [C(SECTOR, 36), C(SECTOR, 42.5)], dict(kind="drive", gap=0.8)),
+
+ # ---------------- VI. CHEST-DEEP ----------------
+ ("Five days after landfall, rescue swimmers were still going into the water.",
+  [G("chapter", case="STORM FILES", n="VI", t="CHEST-DEEP")], dict(kind="calm")),
+ ("September nineteenth. Chief Petty Officer Brad Fitzpatrick, who supervises the rescue swimmers at Air Station Atlantic City, is working flooded homes in North Carolina.",
+  [C(FITZ2, 3), C(FITZ2, 9)], dict(tag=("NORTH CAROLINA", "SEPT 19, 2018"), kind="tense")),
+ ("He worked with other aircrews all day, in extreme conditions: submerged barbed wire fences, floating fire-ant beds, and chest-deep water.",
+  [G("steps", kicker="CPO BRAD FITZPATRICK · AIR STATION ATLANTIC CITY", title="WHAT WAS IN THE WATER",
+     items=[["Barbed wire", "Fences under the surface"], ["Fire ants", "Floating beds"], ["Chest-deep", "Water"]], active=2,
+     footer="SOURCE: U.S. COAST GUARD VIA DVIDS")], dict(kind="tense")),
+ ("Here, he reaches two people standing in the water, and gets her into the basket.",
+  [C(FITZ2, 19), C(FITZ2, 25), C(FITZ2, 48)], dict(kind="drive")),
+ ("She rides it up, holding on to her bag.",
+  [C(FITZ2, 57), C(FITZ2, 63)], dict(kind="calm")),
+ ("At another flooded home, two people, and six dogs.",
+  [C(FITZ, 15), C(FITZ, 21)], dict(kind="calm")),
+ ("Load after load, the dogs go up, with the people riding alongside them.",
+  [C(FITZ, 24), C(FITZ, 51), C(FITZ, 66)], dict(kind="drive")),
+ ("Lift after lift.",
+  [C(FITZ, 74)], dict(kind="punch")),
+ ("And when the last load is on its way up, the swimmer signals the helicopter.",
+  [C(FITZ, 104)], dict(kind="calm", gap=0.8)),
+
+ # ---------------- AFTER ----------------
+ ("By the end, the Coast Guard counted more than nine hundred people and three hundred pets rescued or assisted in North and South Carolina.",
+  [G("stat", a="900+", b="PEOPLE RESCUED OR ASSISTED BY THE COAST GUARD", c="AND 300+ PETS · NORTH AND SOUTH CAROLINA · SOURCE: U.S. COAST GUARD, THE LONG BLUE LINE")], dict(kind="drive")),
+ ("More than three thousand Coast Guard members took part, with cutters, thirty-five shallow-water rescue boats, and twenty-eight aircraft.",
+  [G("cards3", kicker="U.S. COAST GUARD · HURRICANE FLORENCE", title="THE RESPONSE",
+     cards=[dict(h="3,000+", t="Coast Guard members"), dict(h="35", t="Shallow-water rescue boats"), dict(h="28", t="Aircraft")],
+     footer="SOURCE: U.S. COAST GUARD, THE LONG BLUE LINE")], dict(kind="calm")),
+ ("Florence was also deadly. The National Weather Service office in Wilmington lists forty-two deaths in North Carolina, and nine in South Carolina.",
+  [G("cards3", kicker="HURRICANE FLORENCE", title="THE COST",
+     cards=[dict(h="42", t="Deaths in North Carolina"), dict(h="9", t="Deaths in South Carolina"), dict(h="35.93 IN", t="Highest rainfall total")],
+     footer="STATE TOTALS · SOURCE: NWS WILMINGTON")], dict(kind="slow")),
+ ("So what do these rescues teach?",
+  [G("steps", kicker="HURRICANE FLORENCE", title="WHAT THESE RESCUES TEACH",
+     items=[["Wait for it", "Rivers crest later"], ["Get up", "And be seen"], ["Turn around", "Don't drive in"], ["Plan for pets", "They come too"]])], dict(kind="question")),
+ ("First: a slow storm's worst danger can come days later. Here, rivers crested days after landfall.",
+  [C(SECTOR, 28.5)], dict(kind="calm")),
+ ("Second: get up high, and make yourself seen. This man and his dog waited on a roof, and a crew found them.",
+  [C(LUCKY, 210)], dict(kind="calm")),
+ ("Third: never drive into flood water. The National Weather Service says six inches of fast-moving water can knock an adult over. A foot of water will float many vehicles. Two feet of rushing water can carry away most of them.",
+  [G("cards3", kicker="TURN AROUND, DON'T DROWN", title="HOW LITTLE IT TAKES",
+     cards=[dict(h="6 IN", t="Fast-moving water can knock over an adult"), dict(h="1 FT", t="Will float many vehicles"), dict(h="2 FT", t="Rushing water carries away most vehicles")],
+     footer="SOURCE: NATIONAL WEATHER SERVICE")], dict(kind="tense")),
+ ("Citing the Centers for Disease Control, it says more than half of all flood-related drownings happen when a vehicle is driven into hazardous flood water.",
+  [G("stat", a="OVER HALF", b="OF FLOOD-RELATED DROWNINGS: A VEHICLE DRIVEN INTO FLOOD WATER", c="CDC · VIA NATIONAL WEATHER SERVICE")], dict(kind="slow")),
+ ("And fourth: plan for the ones who can't plan for themselves. Out of Rocky Point, seven dogs and four cats flew out with their families.",
+  [C(ROCKY, 168)], dict(kind="calm")),
+ ("Every person you saw lifted out in this video made it out of the flood.",
+  [C(FITZ, 88), C(LUMB, 50.3)], dict(kind="punch", gap=0.8)),
+ ("Next time, on Channel Sixteen: the anatomy of another rescue. Stay safe out there.",
+  [G("end", stamp="OUT OF THE FLOOD")], dict(kind="calm", gap=2.4)),
+]
+
+DISPLAY = [
+ ("September seventeenth, twenty eighteen", "September 17, 2018"), ("twenty eighteen", "2018"), ("Category one", "Category 1"),
+ ("August thirty-first", "August 31"), ("September tenth", "September 10"), ("a hundred forty miles an hour", "140 miles an hour"),
+ ("seven-fifteen", "7:15"), ("September fourteenth", "September 14"), ("ninety miles an hour", "90 miles an hour"), ("six miles an hour", "6 miles an hour"),
+ ("twenty to twenty-five", "20 to 25"), ("thirty to forty", "30 to 40"), ("ten point one feet", "10.1 feet"), ("four days", "four days"),
+ ("fifty miles", "50 miles"), ("thirty-five point nine three inches", "35.93 inches"), ("nineteen ninety-nine", "1999"), ("about twenty-four", "about 24"),
+ ("twenty-three point six three inches", "23.63 inches"), ("twenty-five point five eight feet", "25.58 feet"), ("September nineteenth", "September 19"),
+ ("two to six feet", "2 to 6 feet"), ("twelve-hour", "12-hour"), ("September fifteenth", "September 15"), ("fifty-seven", "57"), ("eight pets", "8 pets"),
+ ("September sixteenth", "September 16"), ("thirty-seven", "37"), ("twenty-six adults", "26 adults"), ("eleven children", "11 children"),
+ ("sixty-seven", "67"), ("twelve pets", "12 pets"), ("seventy-two hours", "72 hours"), ("a hundred thirty-three", "133"), ("twenty pets", "20 pets"),
+ ("ninety-nine point nine percent", "99.9 percent"), ("sixteen-foot", "16-foot"), ("September eighteenth", "September 18"), ("twenty-six of these", "26 of these"),
+ ("a hundred sixteen", "116"), ("two hundred fifty-eight", "258"), ("two hundred five", "205"), ("nine hundred", "900"), ("three hundred pets", "300 pets"),
+ ("three thousand", "3,000"), ("thirty-five shallow-water", "35 shallow-water"), ("twenty-eight aircraft", "28 aircraft"), ("forty-two", "42"),
+ ("six inches", "six inches"), ("Noose River", "Neuse River"), ("Channel Sixteen", "Channel 16"),
+]
+
+META = dict(
+    case="STORM FILES · 006", label="CH 16 · 156.800 MHz",
+    title="Nearly 36 Inches of Rain: The Coast Guard's Hurricane Florence Flood Rescues",
+    voice="am_eric",
+    credit=("Footage: U.S. Coast Guard via DVIDS (public domain). Appearance of U.S. government visual information does not imply or constitute endorsement."
+            r"\NCHANNEL 16 is an independent channel, not affiliated with the U.S. Coast Guard."),
+)
