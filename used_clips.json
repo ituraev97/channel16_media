@@ -130,5 +130,29 @@
    "626782 (low-quality hoist cam)",
    "625962 (truck in flood: possible victim, skip)"
   ]
+ },
+ "a007-medevac": {
+  "long": [
+   "984907",
+   "1010820",
+   "1003800",
+   "1006503",
+   "998677",
+   "1015431",
+   "986213"
+  ],
+  "shorts": {
+   "s1": "984907",
+   "s2": "998677",
+   "s3": "1015431",
+   "s4": "986213",
+   "s5": "1003800"
+  },
+  "also_used_in_short_s5": "1006503",
+  "not_used": [
+   "1025953 (Ocean Gladiator, 12 fps \u2014 told on a map graphic only)",
+   "1005147 (Queen Elizabeth, shaky 24p helmet cam + patient close-ups \u2014 graphic only)",
+   "1015423 (burned-in captions)"
+  ]
  }
 }
