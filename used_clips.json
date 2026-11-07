@@ -167,5 +167,49 @@
    "s4": "946998",
    "s5": "991579"
   }
+ },
+ "f009-cooler": {
+  "long": [
+   "939855",
+   "939934",
+   "938233",
+   "937908",
+   "938016",
+   "938294",
+   "938595",
+   "939360",
+   "939451",
+   "939530",
+   "939646",
+   "939658",
+   "939937",
+   "940014",
+   "940566",
+   "940869"
+  ],
+  "shorts": {
+   "s1": "939855",
+   "s2": "1014541",
+   "s3": "973969",
+   "s4": "966645",
+   "s5": "1028902"
+  },
+  "youtube_shorts": {
+   "y1": "939855",
+   "y2": "1014541",
+   "y3": "973969"
+  },
+  "derived_copies": [
+   "939855d (dup frames removed)",
+   "1014541f/1014541g (FLIR 0-70.5 s, dup frames removed)",
+   "966645s, 1028902s (square pixels)"
+  ],
+  "not_used": [
+   "1024624 (single static shot + waveform)",
+   "957890 (Tybee: footage fine, too few facts)",
+   "1015229 (person entered water near pier: possible self-harm, skip)",
+   "954971 (bridge piling: possible self-harm, skip)",
+   "939745 (burned-in captions)"
+  ]
  }
 }

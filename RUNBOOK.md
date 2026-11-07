@@ -39,7 +39,9 @@ python3 $P/build_ep.py $EP $CL           # 24p clips are motion-interpolated (sl
 python3 $P/motion_check.py $EP/video_raw.mp4 $EP/timing.json $CL/clips.json   # must report 0 issues
 python3 $P/finish16.py $EP $CL           # subtitles, lower thirds, score, SFX, nat sound, -14 LUFS
 bash $P/encode.sh $EP $EP/long.mp4 95    # < 100 MB for GitHub
-python3 $P/short16.py $EP $CL            # 5 Shorts from shorts_spec.py — each must run >= 61.5 s (script refuses shorter)
+python3 $P/plan_shorts.py $EP $CL         # plan shot windows first (FIX=1 re-packs starts: no OVERLAP/END/FRAG); PLATFORM=youtube for YSHORTS
+python3 $P/short16.py $EP $CL            # 5 TikTok Shorts from shorts_spec.py — each must run >= 61.5 s (script refuses shorter)
+python3 $P/short16.py $EP $CL --platform youtube   # YouTube Shorts y1–y3 from YSHORTS: 15–30 s, CTA = YCTA; a line may add dict(label=...) to caption what the footage is
 cd $P && node thumb16.mjs $EP/thumb.json $EP   # thumb_A + thumb_C
 ```
 
@@ -49,7 +51,7 @@ cd $P && node thumb16.mjs $EP/thumb.json $EP   # thumb_A + thumb_C
 - TikTok safe zones: nothing important below y 1440 or right of x 940 between y 700–1700; captions centre at y≈1240, CTA at y≈1060.
 
 ## 5. QA (do not skip)
-- motion_check: 0 issues (repeats, jumps, graphic drift). Re-run on each Short too, and ffprobe each Short: duration must be ≥ 61.5 s.
+- motion_check: 0 issues (repeats, jumps, graphic drift). Phone/FLIR sources with duplicated frames: make a de-duplicated copy (mpdecimate + minterpolate) under a new id (939855d, 1014541g). Re-run on each Short too, and ffprobe each Short: duration must be ≥ 61.5 s.
 - Contact sheet every 8 s: no gore, no unreadable overlaps, subtitles inside frame, lower thirds sized to text.
 - `ffmpeg -i long.mp4 -af ebur128 -f null -` → about −14 LUFS.
 - Thumbnail at 168×94: big words still read; nothing in the bottom-right corner.

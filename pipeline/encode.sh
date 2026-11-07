@@ -2,7 +2,7 @@
 # usage: encode.sh <episode_dir> <out.mp4> [max_MB=95]
 # Burns subs.ass, fades, muxes mix.wav, 2-pass H.265 sized under the GitHub 100 MB limit.
 set -euo pipefail
-EP="$1"; OUT="$2"; MAXMB="${3:-95}"
+EP="$1"; OUT="$(realpath -m "$2")"; MAXMB="${3:-95}"  # absolute: the script cd-s into EP
 cd "$EP"
 D=$(python3 -c "import json;print(json.load(open('timing.json'))['total'])")
 FO=$(python3 -c "print($D-0.8)")

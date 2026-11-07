@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 """CHANNEL 16 vertical Shorts (1080x1920), one rescue each, own narration.
-usage: short16.py <episode_dir> <clips_dir> [id ...]   reads <ep>/shorts_spec.py (SHORTS, DISPLAY, CTA)
+usage: short16.py <episode_dir> <clips_dir> [id ...] [--platform youtube]   reads <ep>/shorts_spec.py (SHORTS, DISPLAY, CTA)
+--platform youtube (or PLATFORM=youtube): builds YSHORTS (YouTube Shorts, 15–30 s, CTA = YCTA) instead of the TikTok SHORTS (>= 61.5 s).
+A line may carry a 4th element dict(label="...") — a small on-screen caption under the hook for that line (e.g. what/when the footage is).
 Footage: static 9:16 crop of the active picture (no zoom/drift), 24p sources motion-interpolated to 30p.
 Audio: directed Kokoro narration + light score + SFX, -14 LUFS. Captions: 2-3 words, centre-low, inside safe zones."""
 import os, re, sys, json, subprocess, importlib.util, numpy as np, soundfile as sf, librosa
 from scipy.signal import butter, sosfilt, fftconvolve
-EP, CLIPS = os.path.abspath(sys.argv[1]), os.path.abspath(sys.argv[2]); ONLY = set(sys.argv[3:])
+ARGS = sys.argv[1:]; PLATFORM = os.environ.get("PLATFORM", "tiktok")
+if "--platform" in ARGS: k = ARGS.index("--platform"); PLATFORM = ARGS[k + 1]; del ARGS[k:k + 2]
+EP, CLIPS = os.path.abspath(ARGS[0]), os.path.abspath(ARGS[1]); ONLY = set(ARGS[2:]); YT = PLATFORM == "youtube"
 sp = importlib.util.spec_from_file_location("ss", f"{EP}/shorts_spec.py"); SS = importlib.util.module_from_spec(sp); sp.loader.exec_module(SS)
 META = json.load(open(f"{CLIPS}/clips.json"))
 W, H, FPS, SR = 1080, 1920, 30, 48000
@@ -51,8 +55,9 @@ def chunks(text):  # 2-3 word caption chunks, breaking at punctuation
     return out
 
 os.makedirs(f"{EP}/shorts", exist_ok=True)
-for sh in SS.SHORTS:
+for sh in (SS.YSHORTS if YT else SS.SHORTS):
     if ONLY and sh["id"] not in ONLY: continue
+    sh = dict(sh, lines=[(l[0], l[1], l[2]) for l in sh["lines"]], labels=[(l[3] if len(l) > 3 else {}).get("label") for l in sh["lines"]])
     wd = f"{EP}/shorts/{sh['id']}"; os.makedirs(wd, exist_ok=True)
     # ---- narration
     vo, starts, durs, t = [], [], [], 0.35
@@ -67,9 +72,11 @@ for sh in SS.SHORTS:
         starts.append(t); durs.append(len(a) / SR); vo.append(a); t += len(a) / SR + (0.45 if kind in ("punch", "slow") else 0.28)
     TOTAL = t + 1.6
     # RULE: every Short must run >= 61.5 s so it qualifies for TikTok Creator Rewards (videos over 1 minute) — write a longer script, never pad with silence
-    MIN = float(os.environ.get("MIN_SHORT_SEC", "61.5"))
+    MIN = float(os.environ.get("MIN_SHORT_SEC", "15" if YT else "61.5")); MAX = 30.0 if YT else 1e9  # YouTube Shorts: 15–30 s
     if TOTAL < MIN:
         raise SystemExit(f"{sh['id']}: {TOTAL:.1f} s is shorter than {MIN} s — lengthen the script (about 200–230 words) and run again")
+    if TOTAL > MAX:
+        raise SystemExit(f"{sh['id']}: {TOTAL:.1f} s is longer than {MAX} s (YouTube Short) — shorten the script")
     # ---- picture: static 9:16 crops, cut points spread evenly over each line
     segs, acc = [], 0.0
     for li, (txt, shots, kind) in enumerate(sh["lines"]):
@@ -103,7 +110,11 @@ for sh in SS.SHORTS:
             e = s + durs[li] * len(c) / tot
             ev.append(f"Dialogue: 3,{ts(s)},{ts(e - 0.01)},Cap,,0,0,0,,{{\\an5\\pos(540,1240)\\fscx90\\fscy90\\t(0,80,\\fscx100\\fscy100)}}{c.upper()}")
             s = e
-    ev.append(f"Dialogue: 5,{ts(TOTAL - 2.2)},{ts(TOTAL)},CTA,,0,0,0,,{{\\an5\\pos(540,1060)\\fad(200,0)}}{SS.CTA}")
+    for li, lab in enumerate(sh["labels"]):
+        if lab:
+            e = starts[li + 1] if li + 1 < len(starts) else TOTAL
+            ev.append(f"Dialogue: 4,{ts(starts[li] if li else 0)},{ts(e)},Hud,,0,0,0,,{{\\an8\\pos(540,560)\\fs30\\bord3}}{lab}")
+    ev.append(f"Dialogue: 5,{ts(TOTAL - 2.2)},{ts(TOTAL)},CTA,,0,0,0,,{{\\an5\\pos(540,1060)\\fad(200,0)}}{(getattr(SS, 'YCTA', SS.CTA) if YT else SS.CTA)}")
     ev.append(f"Dialogue: 5,{ts(0.4)},{ts(5.5)},Small,,0,0,0,,{{\\an7\\pos(70,172)\\fad(300,300)}}Footage: U.S. Coast Guard via DVIDS · not affiliated with the USCG")
     open(f"{wd}/subs.ass", "w", encoding="utf-8").write(HEAD + "\n".join(ev) + "\n")
     # ---- audio: voice + light score + sfx + nat
