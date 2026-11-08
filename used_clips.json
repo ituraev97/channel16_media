@@ -211,5 +211,41 @@
    "954971 (bridge piling: possible self-harm, skip)",
    "939745 (burned-in captions)"
   ]
+ },
+ "a010-swimmer": {
+  "long": [
+   "909520",
+   "872430",
+   "1028863",
+   "971965",
+   "970021",
+   "976930",
+   "993525",
+   "1006811",
+   "987403"
+  ],
+  "shorts": {
+   "s1": "909520",
+   "s2": "993525",
+   "s3": "971965",
+   "s4": "976930",
+   "s5": "970021"
+  },
+  "youtube_shorts": {
+   "y1": "909520",
+   "y2": "993525",
+   "y3": "971965"
+  },
+  "also_used_in_short_s1": [
+   "872430",
+   "1006811"
+  ],
+  "not_used": [
+   "1024624 (Parker Reef kayaker: still image + radio audio only \u2014 told on a graphic)",
+   "972308 (Lake Erie, 10 fps)",
+   "976550 (Isle Royale, night, mostly black)",
+   "835420 (AST interviews, no transcript)",
+   "1006811 frames 237.7-241.8 (low frame rate)"
+  ]
  }
 }
