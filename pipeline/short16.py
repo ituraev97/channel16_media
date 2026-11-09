@@ -9,7 +9,7 @@ import os, re, sys, json, subprocess, importlib.util, numpy as np, soundfile as 
 from scipy.signal import butter, sosfilt, fftconvolve
 ARGS = sys.argv[1:]; PLATFORM = os.environ.get("PLATFORM", "tiktok")
 if "--platform" in ARGS: k = ARGS.index("--platform"); PLATFORM = ARGS[k + 1]; del ARGS[k:k + 2]
-EP, CLIPS = os.path.abspath(ARGS[0]), os.path.abspath(ARGS[1]); ONLY = set(ARGS[2:]); YT = PLATFORM == "youtube"
+EP, CLIPS = os.path.abspath(ARGS[0]), os.path.abspath(ARGS[1]); ONLY = set(ARGS[2:]); YT = PLATFORM == "youtube"  # shorts_spec may set HUD (top-left tag) and CREDIT (footage line) for non-rescue topics
 sp = importlib.util.spec_from_file_location("ss", f"{EP}/shorts_spec.py"); SS = importlib.util.module_from_spec(sp); sp.loader.exec_module(SS)
 META = json.load(open(f"{CLIPS}/clips.json"))
 W, H, FPS, SR = 1080, 1920, 30, 48000
@@ -91,7 +91,10 @@ for sh in (SS.YSHORTS if YT else SS.SHORTS):
             if not ok(ss):
                 cands = [c for c in (ss + k * 0.25 * sg for k in range(1, 17) for sg in (1, -1)) if 0 <= c <= cdur - d - 0.4 and ok(c)]
                 if cands: print(f"MOVE {cid} {ss} -> {cands[0]:.2f}", flush=True); ss = cands[0]
-            rate = f"minterpolate=fps={FPS}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1" if fps_of(clip) < 28 else f"fps={FPS}"
+            sfps = fps_of(clip)  # 24p: motion-interpolate; 29.97: conform to 30 (0.1% faster, no duplicated frame); 59.94: every 2nd frame, conformed
+            rate = (f"minterpolate=fps={FPS}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1" if sfps < 28 else
+                    f"setpts=N/({FPS}*TB)" if 29 < sfps < 30.5 and abs(sfps - FPS) > 1e-3 else
+                    f"select='not(mod(n\\,2))',setpts=N/({FPS}*TB)" if 59 < sfps < 61 else f"fps={FPS}")
             vf = (f"crop={box},crop=min(iw\\,ih*9/16):ih:(iw-min(iw\\,ih*9/16))*{cx}:0,{rate},scale={W}:{H}:flags=lanczos,setsar=1,{GRADE}")
             out = f"{wd}/v{len(segs):02d}.mp4"; n = int(round(d * FPS))
             run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(ss), "-i", clip, "-t", f"{d + 0.3:.3f}", "-vf", vf, "-frames:v", str(n), "-an",
@@ -103,7 +106,7 @@ for sh in (SS.YSHORTS if YT else SS.SHORTS):
     ev = []
     hook = re.sub(r"\[(.+?)\]", r"{\\c&H145BFF&}\1{\\c&HF0F2EA&}", sh["hook"].replace("<br>", r"\N"))
     ev.append(f"Dialogue: 4,{ts(0)},{ts(TOTAL)},Hook,,0,0,0,,{{\\fad(120,0)\\t(0,180,\\fscx100\\fscy100)\\fscx112\\fscy112}}{hook}")
-    ev.append(f"Dialogue: 4,{ts(0)},{ts(TOTAL)},Hud,,0,0,0,,{{\\an7\\pos(70,120)}}{{\\c&H145BFF&}}●{{\\c&HF0F2EA&}} CH 16 · REAL RESCUE")
+    ev.append(f"Dialogue: 4,{ts(0)},{ts(TOTAL)},Hud,,0,0,0,,{{\\an7\\pos(70,120)}}{{\\c&H145BFF&}}●{{\\c&HF0F2EA&}} {getattr(SS, 'HUD', 'CH 16 · REAL RESCUE')}")
     for li, (txt, _, _) in enumerate(sh["lines"]):
         cs = chunks(disp(txt)); tot = sum(len(c) for c in cs); s = starts[li]
         for c in cs:
@@ -115,7 +118,7 @@ for sh in (SS.YSHORTS if YT else SS.SHORTS):
             e = starts[li + 1] if li + 1 < len(starts) else TOTAL
             ev.append(f"Dialogue: 4,{ts(starts[li] if li else 0)},{ts(e)},Hud,,0,0,0,,{{\\an8\\pos(540,560)\\fs30\\bord3}}{lab}")
     ev.append(f"Dialogue: 5,{ts(TOTAL - 2.2)},{ts(TOTAL)},CTA,,0,0,0,,{{\\an5\\pos(540,1060)\\fad(200,0)}}{(getattr(SS, 'YCTA', SS.CTA) if YT else SS.CTA)}")
-    ev.append(f"Dialogue: 5,{ts(0.4)},{ts(5.5)},Small,,0,0,0,,{{\\an7\\pos(70,172)\\fad(300,300)}}Footage: U.S. Coast Guard via DVIDS · not affiliated with the USCG")
+    ev.append(f"Dialogue: 5,{ts(0.4)},{ts(5.5)},Small,,0,0,0,,{{\\an7\\pos(70,172)\\fad(300,300)}}{getattr(SS, 'CREDIT', 'Footage: U.S. Coast Guard via DVIDS · not affiliated with the USCG')}")
     open(f"{wd}/subs.ass", "w", encoding="utf-8").write(HEAD + "\n".join(ev) + "\n")
     # ---- audio: voice + light score + sfx + nat
     N = int(TOTAL * SR) + SR; tt = np.arange(N) / SR; rng = np.random.default_rng(int(sh["id"][1:]))

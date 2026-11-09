@@ -46,9 +46,21 @@ cd $P && node thumb16.mjs $EP/thumb.json $EP   # thumb_A + thumb_C
 ```
 
 ## Shorts for TikTok monetization (owner rule, Nov 2026)
+- Military-hardware TikToks (from Nov 10, 2026): TikTok-only episode folder `episodes/mNNN-<slug>/` with only `shorts_spec.py` (SHORTS, YSHORTS = [], DISPLAY, CTA, HUD, CREDIT) + `sources.md` + `dvids/` descriptions; build with `plan_shorts.py` + `short16.py` directly (no long video). Rules: Projects doc `claude/channel16-tiktok-military-bible.md`. Hosting branch `tiktok-<weekday>`, providers tiktok ONLY (YouTube = Little Hushaby).
 - TikTok Creator Rewards pays only for videos over 1 minute, so every Short is 62–75 s: about 200–230 spoken words, 13–16 lines, 20–28 shots, ONE rescue told as a mini case (hook question → what happened → the call → conditions → the search/approach → the hoist → outcome → one survival lesson → "Follow for more real rescues"). Never pad with silence, freeze frames or repeated shots — the length must come from real story beats.
 - Hook in the first 1.5 s (on-screen hook text + the most dramatic shot). Something new on screen every 2–3 s.
 - TikTok safe zones: nothing important below y 1440 or right of x 940 between y 700–1700; captions centre at y≈1240, CTA at y≈1060.
+
+## Performance rules
+Weekly review (Mondays). Source: Metricool TikTok post metrics (TKPO02/05/06/07/15), last 28 days. Each rule is backed by >= 3 videos; rules are recommendations, not schedule or content-rule changes.
+1. Longer wins: 71–75 s videos had median 530 views (n=4) vs 153 for 62–66 s (n=4) and 236 for 67–70 s (n=8). Aim for 70–75 s, using real facts/beats (never padding).
+2. The 15:00 ET slot was strongest (median 926, n=3; 09:00 284, n=4; 11:00 235, n=4; 17:00 258, n=3). Put the day's strongest system/hook at 15:00.
+3. A themed run beats unrelated singles: the five Hurricane Florence videos had median 318 vs 193 for seven unrelated boat/sea rescues. For military, consider a daily theme (e.g. "navy guns day") once data confirms.
+4. A single unusual camera view or a vivid number in the caption performed best (top 3: 958, 926, 742 — cable camera, cruise-ship hoist, out-of-medication). Lead with the most unusual shot plus a number.
+Caveats: all 16 data points are rescue videos (Nov 4–8); avg time watched (TKPO15) was not returned by Metricool. Military videos start Nov 10; re-check every rule against them next Monday and drop any that do not hold.
+
+Changelog
+- 2026-11-09: first version from 16 rescue TikToks (median 265 views); no military data yet.
 
 ## 5. QA (do not skip)
 - motion_check: 0 issues (repeats, jumps, graphic drift). Phone/FLIR sources with duplicated frames: make a de-duplicated copy (mpdecimate + minterpolate) under a new id (939855d, 1014541g). Re-run on each Short too, and ffprobe each Short: duration must be ≥ 61.5 s.
