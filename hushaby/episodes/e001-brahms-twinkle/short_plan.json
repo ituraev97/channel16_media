@@ -1,0 +1,18 @@
+{
+ "seconds": 42,
+ "seed": 2,
+ "lufs": -16,
+ "pad": true,
+ "intro": 1.5,
+ "fade_out": 4,
+ "passes": [
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "tempo": 76,
+   "octave": 12,
+   "acc": "harp",
+   "shift": 0
+  }
+ ]
+}

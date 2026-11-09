@@ -1,0 +1,7 @@
+{"id": "e001-brahms-twinkle",
+ "long": {"seconds": 720, "seed": 11, "tunes": ["brahms", "twinkle"], "insts": ["musicbox", "celesta", "harp", "musicbox", "piano", "harp"],
+   "shifts": [0, 5, -2, 3], "tempo": [76, 62], "noise": {"kind": "none"},
+   "scene": {"char": "bunny", "pal": "night", "seed": 5},
+   "thumb": {"l1": "Brahms Lullaby", "l2": "& Twinkle Twinkle", "badge": "Music Box · 12 min"}},
+ "short": {"tune": "twinkle", "inst": "musicbox", "tempo": 76, "seconds": 42, "caption": "Twinkle Twinkle\nLittle Star",
+   "scene": {"char": "bunny", "pal": "night", "seed": 8}}}
