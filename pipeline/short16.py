@@ -111,7 +111,8 @@ for sh in (SS.YSHORTS if YT else SS.SHORTS):
         cs = chunks(disp(txt)); tot = sum(len(c) for c in cs); s = starts[li]
         for c in cs:
             e = s + durs[li] * len(c) / tot
-            ev.append(f"Dialogue: 3,{ts(s)},{ts(e - 0.01)},Cap,,0,0,0,,{{\\an5\\pos(540,1240)\\fscx90\\fscy90\\t(0,80,\\fscx100\\fscy100)}}{c.upper()}")
+            k = min(1.0, 24 / max(1, len(c)))  # long chunks are condensed so captions stay inside the TikTok safe zone (x <= 940)
+            ev.append(f"Dialogue: 3,{ts(s)},{ts(e - 0.01)},Cap,,0,0,0,,{{\\an5\\pos(540,1240)\\fscx{90 * k:.0f}\\fscy90\\t(0,80,\\fscx{100 * k:.0f}\\fscy100)}}{c.upper()}")
             s = e
     for li, lab in enumerate(sh["labels"]):
         if lab:

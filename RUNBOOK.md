@@ -49,7 +49,8 @@ cd $P && node thumb16.mjs $EP/thumb.json $EP   # thumb_A + thumb_C
 - Military-hardware TikToks (from Nov 10, 2026): TikTok-only episode folder `episodes/mNNN-<slug>/` with only `shorts_spec.py` (SHORTS, YSHORTS = [], DISPLAY, CTA, HUD, CREDIT) + `sources.md` + `dvids/` descriptions; build with `plan_shorts.py` + `short16.py` directly (no long video). Rules: Projects doc `claude/channel16-tiktok-military-bible.md`. Hosting branch `tiktok-<weekday>`, providers tiktok ONLY (YouTube = Little Hushaby).
 - TikTok Creator Rewards pays only for videos over 1 minute, so every Short is 62–75 s: about 200–230 spoken words, 13–16 lines, 20–28 shots, ONE rescue told as a mini case (hook question → what happened → the call → conditions → the search/approach → the hoist → outcome → one survival lesson → "Follow for more real rescues"). Never pad with silence, freeze frames or repeated shots — the length must come from real story beats.
 - Hook in the first 1.5 s (on-screen hook text + the most dramatic shot). Something new on screen every 2–3 s.
-- TikTok safe zones: nothing important below y 1440 or right of x 940 between y 700–1700; captions centre at y≈1240, CTA at y≈1060.
+- TikTok safe zones: nothing important below y 1440 or right of x 940 between y 700–1700; captions centre at y≈1240, CTA at y≈1060. short16.py condenses caption chunks longer than 24 characters (\fscx) so they stay inside x ≤ 940 (Nov 10, 2026).
+- src_cuts.py can miss soft cuts and dissolves (seen in 995774, 1009153) and can flag muzzle flashes as cuts: check motion_check JUMPs frame by frame, add missed cuts to clips.json and remove flash 'cuts' inside a continuous firing shot.
 
 ## Performance rules
 Weekly review (Mondays). Source: Metricool TikTok post metrics (TKPO02/05/06/07/15), last 28 days. Each rule is backed by >= 3 videos; rules are recommendations, not schedule or content-rule changes.
