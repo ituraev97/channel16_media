@@ -4,3 +4,5 @@ episodes/*/out/
 *.wav
 *.mp4
 test/
+package-lock.json
+research/*-thumbs/
