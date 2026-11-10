@@ -47,8 +47,9 @@ def mux(loop_mp4, wav, dst, seconds, loop_s, abr):
 if only in ("all", "long"):
     L = ep["long"]
     pl = plan_long(L); json.dump(pl, open(os.path.join(out, "long_plan.json"), "w"), indent=1)
-    sh(f"python3 synth.py {out}/long_plan.json {out}/long.wav")
-    lp = loop_video(L["scene"], 1280, 720, "long")
+    synth_py = "longsynth.py" if L["seconds"] > 1200 else "synth.py"  # 60-min sleep videos: memory-safe segment renderer
+    sh(f"python3 {synth_py} {out}/long_plan.json {out}/long.wav")
+    lp = loop_video(L["scene"], 1280, 720, "long", fps=L.get("fps", 24), crf=L.get("crf", 24))
     mux(lp, f"{out}/long.wav", f"{out}/long.mp4", L["seconds"], 24, L.get("abr", "128k"))
     th = dict(L["thumb"], char=L["scene"].get("char", "bunny"), pal=L["scene"].get("pal", "night"), out=f"{out}/thumb.png")
     sh(f"timeout 120 node thumb.mjs '{json.dumps(th)}'")

@@ -12,7 +12,7 @@ export const PAL = {
 };
 export const C = {
   moon: "#ffe9b0", moonShade: "#f4d58c", cream: "#fbf6ee", creamShade: "#ece2d6", pink: "#f6b8c8", pinkDeep: "#ec97ad",
-  lav: "#b9a8e8", lavDeep: "#9583d6", star: "#ffd976", ink: "#5a4a6b", navy: "#141a3d", brown: "#b88a63", brownShade: "#a17552",
+  lav: "#b9a8e8", lavDeep: "#9583d6", star: "#ffd976", ink: "#5a4a6b", navy: "#141a3d", brown: "#b88a63", brownShade: "#a17552", ginger: "#f2c08f", gingerShade: "#e0a46f", gingerStripe: "#d48f5c",
 };
 
 export function fontCSS() {
@@ -101,7 +101,39 @@ export function bear(x, y, s = 1, breath = 0, capColor = C.lav) {
 </g>`;
 }
 
-export const CHARACTERS = { bunny, bear };
+
+// sleeping ginger kitten in the same 220x150 box (head left, eyes closed, curled tail, nightcap)
+export function kitten(x, y, s = 1, breath = 0, capColor = C.lav) {
+  const b = 1 + 0.025 * breath;
+  return `<g transform="translate(${x},${y}) scale(${s})">
+ <ellipse cx="118" cy="128" rx="74" ry="9" fill="#000" opacity=".12"/>
+ <path d="M176 112 Q214 112 206 84 Q200 66 184 74" fill="none" stroke="${C.ginger}" stroke-width="15" stroke-linecap="round"/>
+ <path d="M200 80 Q196 72 186 76" fill="none" stroke="${C.gingerStripe}" stroke-width="15" stroke-linecap="round" opacity=".6"/>
+ <g transform="translate(118,124) scale(1,${b}) translate(-118,-124)">
+  <ellipse cx="124" cy="96" rx="62" ry="34" fill="${C.ginger}"/>
+  <ellipse cx="128" cy="108" rx="50" ry="20" fill="${C.gingerShade}" opacity=".5"/>
+  <path d="M112 66 q6 14 0 26 M132 64 q6 14 0 28 M152 68 q6 12 0 24" fill="none" stroke="${C.gingerStripe}" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+  <ellipse cx="150" cy="120" rx="20" ry="8" fill="${C.ginger}"/>
+ </g>
+ <path d="M38 64 L42 34 L64 54 Z" fill="${C.ginger}"/><path d="M44 58 L45 42 L57 53 Z" fill="${C.pink}" opacity=".8"/>
+ <path d="M80 52 L98 30 L102 62 Z" fill="${C.ginger}"/>
+ <circle cx="66" cy="86" r="37" fill="${C.ginger}"/>
+ <ellipse cx="50" cy="102" rx="20" ry="13" fill="${C.cream}"/>
+ <path d="M60 64 q4 6 0 12 M70 62 q4 6 0 12" fill="none" stroke="${C.gingerStripe}" stroke-width="3.5" stroke-linecap="round" opacity=".6"/>
+ <path d="M38 86 q8 7 16 0" fill="none" stroke="${C.ink}" stroke-width="3.2" stroke-linecap="round"/>
+ <path d="M68 86 q8 7 16 0" fill="none" stroke="${C.ink}" stroke-width="3.2" stroke-linecap="round"/>
+ <path d="M47 96 l5 4 l5 -4 Z" fill="${C.pinkDeep}"/>
+ <path d="M52 100 q-4 5 -8 3 M52 100 q4 5 8 3" fill="none" stroke="${C.ink}" stroke-width="1.8" stroke-linecap="round"/>
+ <path d="M30 100 l-14 -2 M30 104 l-13 3 M74 100 l14 -2 M74 104 l13 3" stroke="${C.cream}" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
+ <ellipse cx="34" cy="96" rx="6" ry="3.5" fill="${C.pink}" opacity=".6"/><ellipse cx="80" cy="96" rx="6" ry="3.5" fill="${C.pink}" opacity=".6"/>
+ <ellipse cx="56" cy="122" rx="17" ry="8" fill="${C.ginger}"/><path d="M48 124 l0 4 M55 125 l0 4" stroke="${C.gingerShade}" stroke-width="2" stroke-linecap="round"/>
+ <path d="M50 58 Q66 34 96 46 Q114 34 134 30 Q120 48 104 68 Q76 50 50 58 Z" fill="${capColor}"/>
+ <path d="M46 60 Q74 48 104 68" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+ ${star5(136, 29, 10, C.star)}
+</g>`;
+}
+
+export const CHARACTERS = { bunny, bear, kitten };
 
 export function sky(W, H, pal, id = "s") {
   return `<defs><linearGradient id="${id}g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${pal.sky0}"/><stop offset=".62" stop-color="${pal.sky1}"/><stop offset="1" stop-color="${pal.sky2}"/></linearGradient></defs>

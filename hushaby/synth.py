@@ -46,6 +46,18 @@ TUNES = {
         chords=[("C", 4), ("F", 2), ("C", 2), ("F", 2), ("C", 2), ("G", 2), ("C", 2),
                 ("C", 2), ("F", 2), ("C", 2), ("G", 2), ("C", 2), ("F", 2), ("C", 2), ("G", 2),
                 ("C", 4), ("F", 2), ("C", 2), ("F", 2), ("C", 2), ("G", 2), ("C", 2)]),
+    # All Through the Night (Ar Hyd y Nos), Welsh traditional, first printed by Edward Jones,
+    # Musical and Poetical Relicks of the Welsh Bards (1784) — public domain. 4/4, AABA, 16 bars.
+    # Notes checked against the Traditional Tune Archive ABC (K:Bb, after Jones 1784 / Bingley 1804), transposed Bb -> C,
+    # and against the hymnary.org incipit 17612 17567 71176. See episodes/e002-*/sources.md.
+    "allnight": dict(meter=4, pickup=0.0, mel=m("""C4 1.5, B3 .5, A3 1, C4 1, D4 1.5, C4 .5, B3 1, G3 1, A3 2, B3 1.5, B3 .5, C4 4,
+        C4 1.5, B3 .5, A3 1, C4 1, D4 1.5, C4 .5, B3 1, G3 1, A3 2, B3 1.5, B3 .5, C4 4,
+        F4 1, E4 1, F4 1, G4 1, A4 1, G4 1, F4 1, E4 1, F4 1, E4 1, D4 1, C4 1, E4 1, D4 1, C4 1, B3 1,
+        C4 1.5, B3 .5, A3 1, C4 1, D4 1.5, C4 .5, B3 1, G3 1, A3 2, B3 1.5, B3 .5, C4 4"""),
+        chords=[("C", 4), ("G", 4), ("F", 2), ("G", 2), ("C", 4),
+                ("C", 4), ("G", 4), ("F", 2), ("G", 2), ("C", 4),
+                ("F", 4), ("F", 2), ("C", 2), ("Dm", 2), ("C", 2), ("C", 2), ("G", 2),
+                ("C", 4), ("G", 4), ("F", 2), ("G", 2), ("C", 4)]),
 }
 
 def env_adsr(n, a, d_tau):

@@ -14,9 +14,10 @@ python3 -c "import numpy, scipy"                     # synth needs numpy + scipy
 Work in `/home/claude/channel16_media/hushaby`. Never commit `node_modules/`, `frames/`, `episodes/*/out/`, wav or mp4 files to main.
 
 ## 2. Files
-- `art.mjs`: palette `PAL` (night, dusk, winter, ocean), colours `C`, the mascots (`bunny`, `bear`, drawn in a 220x150 box with the head on the left and asleep), `bowlMoon`, `sky`, `hills`, `cloud`, `wordmark`.
+- `art.mjs`: palette `PAL` (night, dusk, winter, ocean), colours `C`, the mascots (`bunny`, `bear`, `kitten`, drawn in a 220x150 box with the head on the left and asleep), `bowlMoon`, `sky`, `hills`, `cloud`, `wordmark`.
 - `scene.mjs`: seamless animated loop to PNG frames. Every motion completes a whole number of cycles per loop, so the loop can repeat for hours without a jump. `loop` must be a multiple of 6 s (the "z" cycle). Options: char, pal, seed, snow, caption (Shorts), layout wide or tall.
 - `synth.py`: the lullaby synthesizer, pure numpy. The instruments are musicbox, celesta, harp and piano. Tunes live in `TUNES`. It adds a pad, reverb and optional noise (pink, brown, womb, shush, rain, white) and normalises to the target LUFS.
+- `longsynth.py`: memory-safe renderer for long plans (build.py uses it when seconds > 1200). The container has ~7 GB RAM and synth.py runs out of memory at 60 min; longsynth renders ~5-min segments with one shared reverb and overlap-adds them (no seams), streams the noise with stateful filters (RMS calibrated to synth.noise) and measures loudness in blocks.
 - `thumb.mjs`: 1280x720 thumbnail with l1, l2, badge, char and pal.
 - `build.py episodes/<id> [long|short|all]` writes `out/long.mp4`, `out/short.mp4` and `out/thumb.jpg`.
 - `brandkit.mjs` renders the avatar, banner and watermark into `brand/`.
@@ -30,10 +31,10 @@ Work in `/home/claude/channel16_media/hushaby`. Never commit `node_modules/`, `f
 
 - Plus **one YouTube Short every day**: one melody pass, 35–50 s, vertical 1080x1920, caption = the song name in 1–2 lines, using a different character, palette or melody than the day before.
 - Vary every video: character, palette, seed, keys (`shifts`), instrument order, tempo curve. No two uploads may share the same audio. YouTube demonetises repetitive, mass-produced content, and kids content has extra quality rules: calm, complete and honest.
-- Size limit: GitHub raw files must stay ≤ 95 MB. A 60-min sleep video uses crf 26 and audio at 96k (edit build.py flags for sleep days). Check the size before pushing; if it is too big, raise crf by 2 and/or lower audio to 80k.
+- Size limit: GitHub raw files must stay ≤ 95 MB. A 60-min sleep video uses `"crf": 26` and `"abr": "96k"` in episode.json long (build.py reads both; e002 = 78.9 MB). Check the size before pushing; if it is too big, raise crf by 2 and/or lower audio to 80k.
 
 ## 4. Melodies: public domain only
-Present: `brahms` (Wiegenlied Op. 49 No. 4, 1868) and `twinkle` (traditional).
+Present: `brahms` (Wiegenlied Op. 49 No. 4, 1868), `twinkle` (traditional) and `allnight` (All Through the Night / Ar Hyd y Nos, Welsh trad., Jones 1784; added 10.11.2026, sources in e002).
 Add new tunes only if all three hold:
 - the melody was published before 1929 (folk or traditional, or a composer who died before 1956);
 - you are certain of every note; check against a public-domain score you actually opened, such as Mutopia, IMSLP or Wikisource, and note the URL in `sources.md`;

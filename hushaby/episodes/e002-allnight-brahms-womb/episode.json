@@ -1,0 +1,7 @@
+{"id": "e002-allnight-brahms-womb",
+ "long": {"seconds": 3600, "seed": 23, "tunes": ["allnight", "brahms"], "insts": ["harp", "musicbox", "piano", "harp", "celesta", "musicbox"],
+   "shifts": [-2, 3, 0, -4], "tempo": [62, 56], "noise": {"kind": "womb", "db": -30}, "abr": "96k", "crf": 26,
+   "scene": {"char": "kitten", "pal": "dusk", "seed": 17},
+   "thumb": {"l1": "1 Hour Sleep Music", "l2": "All Through the Night & Brahms", "badge": "+ Soft Womb Sounds"}},
+ "short": {"tune": "allnight", "inst": "musicbox", "tempo": 86, "seconds": 49, "seed": 6, "shift": 2, "caption": "All Through\nthe Night",
+   "scene": {"char": "kitten", "pal": "ocean", "seed": 12}}}
