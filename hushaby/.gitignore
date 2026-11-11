@@ -6,3 +6,5 @@ episodes/*/out/
 test/
 package-lock.json
 research/*-thumbs/
+build.log
+__pycache__/
