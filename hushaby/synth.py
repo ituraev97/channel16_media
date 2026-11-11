@@ -58,6 +58,15 @@ TUNES = {
                 ("C", 4), ("G", 4), ("F", 2), ("G", 2), ("C", 4),
                 ("F", 4), ("F", 2), ("C", 2), ("Dm", 2), ("C", 2), ("C", 2), ("G", 2),
                 ("C", 4), ("G", 4), ("F", 2), ("G", 2), ("C", 4)]),
+    # Frère Jacques ("Are You Sleeping, Brother John?"), French traditional round; earliest manuscript c. 1775–85,
+    # first printed 1811 — public domain. 4/4, 8 bars. Notes checked against the printed score in Boutet de Monvel /
+    # Widor, "Vieilles chansons et rondes pour les petits enfants" (Paris, 1883), p. 19 (in G), transposed G -> C.
+    # See episodes/e003-*/sources.md.
+    "frere": dict(meter=4, pickup=0.0, mel=m("""C4 1, D4 1, E4 1, C4 1, C4 1, D4 1, E4 1, C4 1,
+        E4 1, F4 1, G4 2, E4 1, F4 1, G4 2,
+        G4 .5, A4 .5, G4 .5, F4 .5, E4 1, C4 1, G4 .5, A4 .5, G4 .5, F4 .5, E4 1, C4 1,
+        C4 1, G3 1, C4 2, C4 1, G3 1, C4 2"""),
+        chords=[("C", 4), ("Am", 4), ("C", 4), ("Em", 4), ("C", 4), ("F", 2), ("C", 2), ("C", 4), ("C", 4)]),
 }
 
 def env_adsr(n, a, d_tau):
@@ -159,6 +168,7 @@ def render(plan):
                 hum = (rnd.random() - .5) * .018
                 v = voice(inst, nt + sh + oct_up, dur, vel0 * (.86 + .14 * rnd.random()), rnd)
                 s = int(max(0, tt + hum) * SR); e = min(n, s + len(v))
+                if e <= s: tt += dur; continue  # note starts after the end of the render
                 dry[0, s:e] += v[:e - s] * (1 - pan) * .5 * 2 ** .5
                 dry[1, s:e] += v[:e - s] * (1 + pan) * .5 * 2 ** .5
             tt += dur
@@ -175,11 +185,13 @@ def render(plan):
                     nt = notes[k % len(notes)] if k % 2 == 0 else notes[(k + 1) % len(notes)] + 0
                     v = voice(acc_inst, nt, step * spb, .32 * (.9 + .1 * rnd.random()), rnd)
                     s = int((tc + tb * spb) * SR); e = min(n, s + len(v))
+                    if e <= s: break
                     dry[0, s:e] += v[:e - s] * .55; dry[1, s:e] += v[:e - s] * .45
                     tb += step; k += 1
             if plan.get("pad", True):
                 pc = pad_chord([nt + 12 for nt in notes[:3]], b * spb)
                 s = int(tc * SR); e = min(n, s + len(pc))
+                if e <= s: break
                 padbus[0, s:e] += pc[:e - s] * .5; padbus[1, s:e] += pc[:e - s] * .5
             tc += b * spb
         t0 = max(mel_end, tc) + p.get("gap", 2.5)

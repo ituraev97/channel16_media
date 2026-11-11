@@ -1,0 +1,18 @@
+{
+ "seconds": 38,
+ "seed": 14,
+ "lufs": -16,
+ "pad": true,
+ "intro": 1.5,
+ "fade_out": 4,
+ "passes": [
+  {
+   "tune": "frere",
+   "inst": "celesta",
+   "tempo": 62,
+   "octave": 12,
+   "acc": "harp",
+   "shift": 3
+  }
+ ]
+}

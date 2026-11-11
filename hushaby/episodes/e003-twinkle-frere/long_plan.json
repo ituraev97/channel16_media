@@ -1,0 +1,242 @@
+{
+ "seconds": 840,
+ "seed": 37,
+ "lufs": -18,
+ "pad": true,
+ "noise": {
+  "kind": "none"
+ },
+ "passes": [
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": 2,
+   "tempo": 74.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.8,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "harp",
+   "shift": 2,
+   "tempo": 73.4,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7931818181818182,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "celesta",
+   "shift": -3,
+   "tempo": 72.7,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7863636363636364,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "musicbox",
+   "shift": -3,
+   "tempo": 72.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7795454545454545,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "piano",
+   "shift": 5,
+   "tempo": 71.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7727272727272728,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "musicbox",
+   "shift": 5,
+   "tempo": 70.8,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.765909090909091,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "harp",
+   "shift": 0,
+   "tempo": 70.2,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7590909090909091,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "celesta",
+   "shift": 0,
+   "tempo": 69.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7522727272727273,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": 2,
+   "tempo": 68.9,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7454545454545455,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "piano",
+   "shift": 2,
+   "tempo": 68.3,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7386363636363636,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": -3,
+   "tempo": 67.6,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7318181818181819,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "harp",
+   "shift": -3,
+   "tempo": 67.0,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7250000000000001,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "celesta",
+   "shift": 5,
+   "tempo": 66.4,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7181818181818183,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "musicbox",
+   "shift": 5,
+   "tempo": 65.7,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7113636363636364,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "piano",
+   "shift": 0,
+   "tempo": 65.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7045454545454546,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "musicbox",
+   "shift": 0,
+   "tempo": 64.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6977272727272728,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "harp",
+   "shift": 2,
+   "tempo": 63.8,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.6909090909090909,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "celesta",
+   "shift": 2,
+   "tempo": 63.2,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6840909090909091,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": -3,
+   "tempo": 62.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6772727272727274,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "piano",
+   "shift": -3,
+   "tempo": 61.9,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6704545454545455,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": 5,
+   "tempo": 61.3,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6636363636363637,
+   "gap": 3.0
+  },
+  {
+   "tune": "frere",
+   "inst": "harp",
+   "shift": 5,
+   "tempo": 60.6,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.6568181818181819,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "celesta",
+   "shift": 0,
+   "tempo": 60.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.65,
+   "gap": 3.0
+  }
+ ],
+ "fade_out": 20
+}

@@ -16,7 +16,14 @@ sh = lambda c: subprocess.run(c, shell=True, check=True, cwd=HERE)
 
 def plan_long(L):
     secs = L["seconds"]; tunes = L["tunes"]; insts = L["insts"]; shifts = L.get("shifts", [0]); t0, t1 = L.get("tempo", [76, 64])
-    est_pass = 44.0; n = int(secs / est_pass) + 2
+    # number of passes from each tune's real length (short tunes such as "frere" need more passes than the old 44 s guess)
+    sys.path.insert(0, HERE); from synth import TUNES
+    beats = {k: sum(b for _, b in v["mel"]) for k, v in TUNES.items()}
+    n, t = 0, 5.0
+    while t < secs + 10:
+        tp = t0 + (t1 - t0) * min(1, t / secs)
+        t += beats[tunes[n % len(tunes)]] * 60 / tp + 3.0; n += 1
+    n += 1
     passes = []
     for i in range(n):
         frac = i / max(1, n - 1)

@@ -1,0 +1,7 @@
+{"id": "e003-twinkle-frere",
+ "long": {"seconds": 840, "seed": 37, "tunes": ["twinkle", "frere"], "insts": ["musicbox", "harp", "celesta", "musicbox", "piano"],
+   "shifts": [2, -3, 5, 0], "tempo": [74, 60], "noise": {"kind": "none"},
+   "scene": {"char": "bear", "pal": "winter", "seed": 29, "snow": true},
+   "thumb": {"l1": "Twinkle Twinkle", "l2": "& Are You Sleeping", "badge": "Music Box · 14 min"}},
+ "short": {"tune": "frere", "inst": "celesta", "tempo": 62, "seconds": 38, "seed": 14, "shift": 3, "caption": "Are You Sleeping,\nBrother John?",
+   "scene": {"char": "bunny", "pal": "dusk", "seed": 21}}}

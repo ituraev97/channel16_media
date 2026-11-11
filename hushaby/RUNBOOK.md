@@ -34,7 +34,8 @@ Work in `/home/claude/channel16_media/hushaby`. Never commit `node_modules/`, `f
 - Size limit: GitHub raw files must stay ≤ 95 MB. A 60-min sleep video uses `"crf": 26` and `"abr": "96k"` in episode.json long (build.py reads both; e002 = 78.9 MB). Check the size before pushing; if it is too big, raise crf by 2 and/or lower audio to 80k.
 
 ## 4. Melodies: public domain only
-Present: `brahms` (Wiegenlied Op. 49 No. 4, 1868), `twinkle` (traditional) and `allnight` (All Through the Night / Ar Hyd y Nos, Welsh trad., Jones 1784; added 10.11.2026, sources in e002).
+Present: `brahms` (Wiegenlied Op. 49 No. 4, 1868), `twinkle` (traditional) `allnight` (All Through the Night / Ar Hyd y Nos, Welsh trad., Jones 1784; added 10.11.2026, sources in e002) and `frere` (Frère Jacques / Are You Sleeping, French trad. round, 8 bars ≈ 27 s at 72 bpm; checked against Boutet de Monvel/Widor 1883; added 11.11.2026, sources in e003).
+Score access from the cloud: en.wikipedia.org, IMSLP, Mutopia and tunearch are blocked by the proxy; Wikimedia Commons file pages and `upload.wikimedia.org/.../thumb/.../1280px-<file>` thumbnails work (use a custom User-Agent, wait a few seconds between requests), then Read the image.
 Add new tunes only if all three hold:
 - the melody was published before 1929 (folk or traditional, or a composer who died before 1956);
 - you are certain of every note; check against a public-domain score you actually opened, such as Mutopia, IMSLP or Wikisource, and note the URL in `sources.md`;
@@ -44,7 +45,7 @@ Good candidates: Rock-a-bye Baby (1886), Hush Little Baby (trad.), All Through t
 Never use modern songs or other channels' arrangements, and never use characters from shows (Cocomelon, Disney, Bluey, etc.).
 
 ## 5. Build and QA
-1. Write `episodes/eNNN-<slug>/episode.json` (see e001). Long: seconds, tunes, insts, shifts, tempo [start, end], noise, scene, thumb. Short: tune, inst, tempo, seconds, caption, scene.
+1. Write `episodes/eNNN-<slug>/episode.json` (see e001). build.py sizes the number of long passes from each tune's real length (11.11.2026), so short tunes never leave silence at the end. Use an odd-length `insts` list (e.g. 5) with 2 tunes so each tune rotates through every instrument. Long: seconds, tunes, insts, shifts, tempo [start, end], noise, scene, thumb. Short: tune, inst, tempo, seconds, caption, scene.
 2. `nohup python3 build.py episodes/eNNN-<slug> > build.log 2>&1 &`, then wait. A 12-min episode takes about 4 min; a 60-min one about 12 min.
 3. QA (all mandatory):
    - `ffprobe` the duration: long within ±10 s of the plan, Short 30–58 s.

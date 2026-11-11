@@ -1,0 +1,6 @@
+# e003 sources
+- Frère Jacques ("Are You Sleeping, Brother John?"), French traditional round — public domain. Earliest known manuscript: *Recueil de Timbres de Vaudevilles* (Bibliothèque nationale de France, c. 1775–1785, as "Frère Blaise"); first printed 1811 (Fuld). https://en.wikipedia.org/wiki/Fr%C3%A8re_Jacques
+  - Every note checked against the printed score in Maurice Boutet de Monvel & Charles-Marie Widor, *Vieilles chansons et rondes pour les petits enfants* (Paris: Plon, Nourrit et Cie, 1883), p. 19 — scan opened on Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Vielles_Chansons_et_Rondes_pour_les_Petits_Enfants_23.jpg (score in G, set as a 3-voice round; the single melody line used, transposed G → C in synth.py; keys then set per pass with `shifts`).
+  - Melody (in C): C D E C | C D E C | E F G– | E F G– | G A G F E C | G A G F E C | C G₃ C– | C G₃ C–. Chords (I, vi, I, iii, I, IV–I, I, I) are our own simple harmonisation.
+- Twinkle, Twinkle, Little Star — melody "Ah ! vous dirai-je, maman" (1761), words Jane Taylor (1806) — public domain. Notes as in e001.
+- Arrangement (music box / harp / celesta / piano), animation and the sleepy bear in a winter scene: Little Hushaby, synthesized in code (no samples, no third-party recordings).
