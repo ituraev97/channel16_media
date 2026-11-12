@@ -1,0 +1,18 @@
+{
+ "seconds": 48,
+ "seed": 19,
+ "lufs": -16,
+ "pad": true,
+ "intro": 1.5,
+ "fade_out": 4,
+ "passes": [
+  {
+   "tune": "brahms",
+   "inst": "harp",
+   "tempo": 68,
+   "octave": 12,
+   "acc": "harp",
+   "shift": -2
+  }
+ ]
+}

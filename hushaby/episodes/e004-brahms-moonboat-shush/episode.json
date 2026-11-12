@@ -1,0 +1,7 @@
+{"id": "e004-brahms-moonboat-shush",
+ "long": {"seconds": 3600, "seed": 47, "tunes": ["brahms", "moonboat"], "insts": ["harp", "piano", "musicbox", "celesta", "harp"],
+   "shifts": [0, -3, 2, -1], "tempo": [60, 55], "noise": {"kind": "shush", "db": -32}, "abr": "96k", "crf": 26,
+   "scene": {"char": "bunny", "pal": "ocean", "seed": 41},
+   "thumb": {"l1": "1 Hour Sleep Music", "l2": "Brahms Lullaby + Shhh", "badge": "Harp · Piano · Music Box"}},
+ "short": {"tune": "brahms", "inst": "harp", "tempo": 68, "seconds": 48, "seed": 19, "shift": -2, "caption": "Brahms\nLullaby",
+   "scene": {"char": "kitten", "pal": "night", "seed": 33}}}
