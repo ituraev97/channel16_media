@@ -1,0 +1,7 @@
+{"id": "e005-allnight-raindrop-rain",
+ "long": {"seconds": 3600, "seed": 59, "tunes": ["allnight", "raindrop"], "insts": ["piano", "harp", "celesta", "musicbox", "piano"],
+   "shifts": [-2, 2, 0, -3], "tempo": [60, 56], "noise": {"kind": "rain", "db": -30}, "abr": "96k", "crf": 26,
+   "scene": {"char": "bear", "pal": "night", "seed": 53},
+   "thumb": {"l1": "1 Hour Sleep Music", "l2": "All Through the Night + Rain", "badge": "Gentle Rain Sounds"}},
+ "short": {"tune": "twinkle", "inst": "harp", "tempo": 70, "seconds": 46, "seed": 27, "shift": -3, "caption": "Twinkle Twinkle\nLittle Star",
+   "scene": {"char": "bunny", "pal": "winter", "seed": 44, "snow": true}}}

@@ -75,6 +75,14 @@ TUNES = {
         A4 1.5, G4 .5, E4 1, D4 2, E4 1, D4 1.5, C4 .5, D4 1, C4 3"""),
         chords=[("C", 3), ("F", 3), ("C", 3), ("G", 3), ("C", 3), ("F", 3), ("G", 3), ("C", 3),
                 ("F", 3), ("C", 3), ("Dm", 3), ("C", 3), ("F", 3), ("G", 3), ("G7", 3), ("C", 3)]),
+    # "Raindrop Lullaby" — ORIGINAL melody by Little Hushaby (written 13.11.2026, e005). Not a public-domain tune:
+    # always title it as an original lullaby. 4/4, 16 bars (AABA'-like), C major, I-IV-V harmony.
+    "raindrop": dict(meter=4, pickup=0.0, mel=m("""G4 2, E4 1, G4 1, A4 2, C5 1, A4 1, G4 1, E4 1, D4 1, E4 1, D4 4,
+        G4 2, E4 1, G4 1, A4 2, C5 1, A4 1, G4 1, F4 1, E4 1, D4 1, C4 4,
+        E4 1, G4 1, C5 2, B4 1, A4 1, G4 2, A4 1, C5 1, A4 1, F4 1, G4 4,
+        F4 1, A4 1, C5 2, G4 1, E4 1, G4 2, F4 1, E4 1, D4 2, C4 4"""),
+        chords=[("C", 4), ("F", 4), ("C", 4), ("G", 4), ("C", 4), ("F", 4), ("G", 4), ("C", 4),
+                ("C", 4), ("G", 4), ("F", 4), ("C", 4), ("F", 4), ("C", 4), ("G7", 4), ("C", 4)]),
 }
 
 def env_adsr(n, a, d_tau):

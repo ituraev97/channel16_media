@@ -1,0 +1,553 @@
+{
+ "seconds": 3600,
+ "seed": 59,
+ "lufs": -18,
+ "pad": true,
+ "noise": {
+  "kind": "rain",
+  "db": -30
+ },
+ "passes": [
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": -2,
+   "tempo": 60.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.8,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "harp",
+   "shift": -2,
+   "tempo": 59.9,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7971698113207547,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "celesta",
+   "shift": 2,
+   "tempo": 59.8,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7943396226415095,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "musicbox",
+   "shift": 2,
+   "tempo": 59.8,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7915094339622641,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": 0,
+   "tempo": 59.7,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7886792452830189,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": 0,
+   "tempo": 59.6,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7858490566037736,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "harp",
+   "shift": -3,
+   "tempo": 59.5,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7830188679245284,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "celesta",
+   "shift": -3,
+   "tempo": 59.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.780188679245283,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "musicbox",
+   "shift": -2,
+   "tempo": 59.4,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7773584905660378,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": -2,
+   "tempo": 59.3,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7745283018867924,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": 2,
+   "tempo": 59.2,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7716981132075472,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "harp",
+   "shift": 2,
+   "tempo": 59.2,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7688679245283019,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "celesta",
+   "shift": 0,
+   "tempo": 59.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7660377358490567,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "musicbox",
+   "shift": 0,
+   "tempo": 59.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7632075471698113,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": -3,
+   "tempo": 58.9,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7603773584905661,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": -3,
+   "tempo": 58.9,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7575471698113208,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "harp",
+   "shift": -2,
+   "tempo": 58.8,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7547169811320755,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "celesta",
+   "shift": -2,
+   "tempo": 58.7,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7518867924528302,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "musicbox",
+   "shift": 2,
+   "tempo": 58.6,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.749056603773585,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": 2,
+   "tempo": 58.6,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7462264150943396,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": 0,
+   "tempo": 58.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7433962264150944,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "harp",
+   "shift": 0,
+   "tempo": 58.4,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7405660377358491,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "celesta",
+   "shift": -3,
+   "tempo": 58.3,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7377358490566038,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "musicbox",
+   "shift": -3,
+   "tempo": 58.3,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7349056603773585,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": -2,
+   "tempo": 58.2,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7320754716981133,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": -2,
+   "tempo": 58.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7292452830188679,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "harp",
+   "shift": 2,
+   "tempo": 58.0,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7264150943396227,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "celesta",
+   "shift": 2,
+   "tempo": 58.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7235849056603774,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "musicbox",
+   "shift": 0,
+   "tempo": 57.9,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7207547169811321,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": 0,
+   "tempo": 57.8,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7179245283018868,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": -3,
+   "tempo": 57.7,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7150943396226416,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "harp",
+   "shift": -3,
+   "tempo": 57.7,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.7122641509433962,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "celesta",
+   "shift": -2,
+   "tempo": 57.6,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.709433962264151,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "musicbox",
+   "shift": -2,
+   "tempo": 57.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7066037735849057,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": 2,
+   "tempo": 57.4,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7037735849056604,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": 2,
+   "tempo": 57.4,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7009433962264151,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "harp",
+   "shift": 0,
+   "tempo": 57.3,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.6981132075471699,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "celesta",
+   "shift": 0,
+   "tempo": 57.2,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6952830188679245,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "musicbox",
+   "shift": -3,
+   "tempo": 57.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6924528301886793,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": -3,
+   "tempo": 57.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.689622641509434,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": -2,
+   "tempo": 57.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6867924528301887,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "harp",
+   "shift": -2,
+   "tempo": 56.9,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.6839622641509434,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "celesta",
+   "shift": 2,
+   "tempo": 56.8,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6811320754716982,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "musicbox",
+   "shift": 2,
+   "tempo": 56.8,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6783018867924528,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": 0,
+   "tempo": 56.7,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6754716981132076,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": 0,
+   "tempo": 56.6,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6726415094339623,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "harp",
+   "shift": -3,
+   "tempo": 56.5,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.669811320754717,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "celesta",
+   "shift": -3,
+   "tempo": 56.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6669811320754717,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "musicbox",
+   "shift": -2,
+   "tempo": 56.4,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6641509433962265,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "piano",
+   "shift": -2,
+   "tempo": 56.3,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6613207547169812,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": 2,
+   "tempo": 56.2,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6584905660377359,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "harp",
+   "shift": 2,
+   "tempo": 56.2,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.6556603773584906,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "celesta",
+   "shift": 0,
+   "tempo": 56.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6528301886792454,
+   "gap": 3.0
+  },
+  {
+   "tune": "raindrop",
+   "inst": "musicbox",
+   "shift": 0,
+   "tempo": 56.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.65,
+   "gap": 3.0
+  }
+ ],
+ "fade_out": 20
+}
