@@ -1,0 +1,11 @@
+# m017 QA (2026-11-14)
+- Durations (ffprobe): t1 74.0 s, t2 73.7 s, t3 68.3 s, t4 74.3 s, t5 73.5 s; loudness −14.2 LUFS each; files 41–58 MB, 1080x1920.
+- motion_check: t2, t4, t5 0 issues. Remaining flags are genuine source events, checked frame by frame:
+  - t1 0:42.80 — Avenger missile ignition flash (944147 at 177.1 s), single bright frame.
+  - t3 0:22.33 / 0:23.60 / 1:00.37 — projectile impact flashes in the 2014 HVP target frames (403786 at 33.7, 35.0, 31.6 s).
+- 539084 (2017 railgun drone footage) has irregular duplicated/skipped frames; used a de-duplicated copy 539084d (mpdecimate + minterpolate, first 60 s, local only); the 72.5 s aerial firing shot still uses the original.
+- 771440 was downscaled from 4K to 1080p (audio restored from the original after the first t2 build failed).
+- 885463 is pillar/letterboxed: box 1672:938:124:80 added to clips.json.
+- Contact sheets checked (every 2.5 s): no title slates/logos (539084 0–17 s, 403786 38 s+, 386816 25 s mascot avoided), no burned-in "gun right/left view" text (crop moved), no NMESIS interview lower thirds, 493486 (burned-in text) not used, no Mk-19 shots in t4.
+- Fact-check: independent agent, all 5 videos (≈45 findings). Applied before the final build: per-line label/footage mismatches (t1 L14/L15, t2 L1/L3, t3 L10/L11/L13, t4 L9/L11/L12, t5 L2/L4/L5/L13 — generic labels LB_F15/LB_M2/LB_RA where footage is mixed), "Mach 2.5 plus", "No explosives" removed, railgun pause reason added and $500M attributed to Military.com, M2 inventory dated 2012, M2A1 flash-hider claim simplified, "Army vehicles" → "military vehicles", USMC handout attribution, NMESIS earlier test-fires reworded (no "first" conflict), 2023 battery plan dated, hook "100-NM" → "0 CREW ON BOARD", kg → pounds, TTS respellings (A-I-M one-twenty, Nemesis, Grafenvur, fifty-caliber).
+- 0.5 s frames: t1 Stinger leaving the launcher (Norway), t2 AIM-120 under the F-15 wing, t3 railgun muzzle fireball, t4 M2 firing (Grafenwoehr), t5 NMESIS launch smoke at Point Mugu.
