@@ -1,0 +1,7 @@
+{"id": "e007-twinkle-allnight",
+ "long": {"seconds": 780, "seed": 79, "tunes": ["twinkle", "allnight"], "insts": ["celesta", "musicbox", "harp", "piano", "musicbox"],
+   "shifts": [3, -1, 0, -3], "tempo": [74, 61], "noise": {"kind": "none"},
+   "scene": {"char": "bunny", "pal": "dusk", "seed": 71},
+   "thumb": {"l1": "Twinkle Twinkle", "l2": "& All Through the Night", "badge": "Music Box · 13 min", "char": "bunny", "pal": "dusk"}},
+ "short": {"tune": "twinkle", "inst": "celesta", "tempo": 70, "seconds": 44, "seed": 83, "shift": -2, "caption": "Twinkle Twinkle\nLittle Star",
+   "scene": {"char": "bear", "pal": "night", "seed": 89}}}

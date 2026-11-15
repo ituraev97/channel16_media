@@ -1,0 +1,182 @@
+{
+ "seconds": 780,
+ "seed": 79,
+ "lufs": -18,
+ "pad": true,
+ "noise": {
+  "kind": "none"
+ },
+ "passes": [
+  {
+   "tune": "twinkle",
+   "inst": "celesta",
+   "shift": 3,
+   "tempo": 74.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.8,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "musicbox",
+   "shift": 3,
+   "tempo": 73.2,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.790625,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "harp",
+   "shift": -1,
+   "tempo": 72.4,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.78125,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": -1,
+   "tempo": 71.6,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7718750000000001,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": 0,
+   "tempo": 70.8,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7625000000000001,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "celesta",
+   "shift": 0,
+   "tempo": 69.9,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.753125,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": -3,
+   "tempo": 69.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.74375,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "harp",
+   "shift": -3,
+   "tempo": 68.3,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.734375,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "piano",
+   "shift": 3,
+   "tempo": 67.5,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7250000000000001,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "musicbox",
+   "shift": 3,
+   "tempo": 66.7,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.7156250000000001,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "celesta",
+   "shift": -1,
+   "tempo": 65.9,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.70625,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "musicbox",
+   "shift": -1,
+   "tempo": 65.1,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.696875,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "harp",
+   "shift": 0,
+   "tempo": 64.2,
+   "acc": "celesta",
+   "octave": 12,
+   "vel": 0.6875,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "piano",
+   "shift": 0,
+   "tempo": 63.4,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6781250000000001,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": -3,
+   "tempo": 62.6,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.6687500000000001,
+   "gap": 3.0
+  },
+  {
+   "tune": "allnight",
+   "inst": "celesta",
+   "shift": -3,
+   "tempo": 61.8,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.659375,
+   "gap": 3.0
+  },
+  {
+   "tune": "twinkle",
+   "inst": "musicbox",
+   "shift": 3,
+   "tempo": 61.0,
+   "acc": "harp",
+   "octave": 12,
+   "vel": 0.65,
+   "gap": 3.0
+  }
+ ],
+ "fade_out": 20
+}
