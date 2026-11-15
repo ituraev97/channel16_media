@@ -455,5 +455,33 @@
    "885463"
   ],
   "note": "downloaded but not used: 493486 (burned-in text throughout), 927097; 539084d = de-duplicated copy (mpdecimate+minterpolate) of 539084, local only"
+ },
+ "m018-hardware-day8": {
+  "t1": [
+   "886420",
+   "470653",
+   "985440"
+  ],
+  "t2": [
+   "894189",
+   "973020",
+   "927608"
+  ],
+  "t3": [
+   "934266",
+   "550102",
+   "524054",
+   "973398",
+   "1005696"
+  ],
+  "t4": [
+   "845173",
+   "1015995"
+  ],
+  "t5": [
+   "772985",
+   "508345"
+  ],
+  "note": "508345d = de-duplicated copy (mpdecimate+minterpolate) of 508345 20-76 s, local only; downloaded but not used: 855989, 811910, 991386, 1016009, 793951, 772961 (animation), 546779, 907089, 884702, 883791, 871771, 989673, 914649, 986248, 965713"
  }
 }
