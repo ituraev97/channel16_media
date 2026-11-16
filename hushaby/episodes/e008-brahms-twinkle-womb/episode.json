@@ -1,0 +1,7 @@
+{"id": "e008-brahms-twinkle-womb",
+ "long": {"seconds": 3600, "seed": 101, "tunes": ["brahms", "twinkle"], "insts": ["piano", "harp", "musicbox", "celesta", "harp"],
+   "shifts": [-1, 2, -3, 1], "tempo": [61, 56], "noise": {"kind": "womb", "db": -30}, "abr": "96k", "crf": 26,
+   "scene": {"char": "bear", "pal": "ocean", "seed": 97},
+   "thumb": {"l1": "1 Hour Sleep Music", "l2": "Brahms & Twinkle + Womb", "badge": "Soft Womb Sounds"}},
+ "short": {"tune": "allnight", "inst": "harp", "tempo": 84, "seconds": 49, "seed": 103, "shift": -1, "caption": "All Through\nthe Night",
+   "scene": {"char": "kitten", "pal": "winter", "seed": 107, "snow": true}}}

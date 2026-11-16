@@ -77,3 +77,7 @@ Orphan branch per ET weekday: `hushaby-<mon..sun>`, containing only `long.mp4`, 
 
 ## 8. Commit
 On main, commit `hushaby/episodes/eNNN-*/episode.json`, the plans, `sources.md`, `research/*.md` and any code changes. Run `git fetch` and rebase first, and end the message with the session attribution lines.
+
+## Performance rules
+No rules yet: each rule must be backed by ≥ 3 measured Little Hushaby videos.
+- 2026-11-16 weekly review: 12 Little Hushaby uploads (09.11–15.11; 6 long, 6 Shorts) had 1 view in total (YouTube Data API); Metricool analytics does not list them yet. Nothing to compare, so no rules. Next Monday read per-video stats from the YouTube Data API (channel uploads playlist) if Metricool is still empty.
