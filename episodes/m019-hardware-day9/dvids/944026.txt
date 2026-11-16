@@ -1,0 +1,14 @@
+ID 944026
+TITLE Dynamic Front 25 - M119 A3 Howitzer Live Fire
+DATE 2024-11-18T00:00:00-05:00
+UNIT 5th Mobile Public Affairs Detachment
+LOCATION {'city': 'Smardan', 'state': '', 'country': 'Romania', 'country_abbreviation': 'RO'}
+DURATION 65
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/944026
+
+DESCRIPTION
+U.S. Soldiers assigned to 5th Battalion, 25th Field Artillery Regiment, 3rd Brigade Combat Team, 10th Mountain Division, conduct a fire mission with the M119 A3 howitzer in Smârdan, Romania, Nov. 18, 2024. Dynamic Front increases the lethality of the NATO Alliance through long-range fires, building unit readiness in a complex joint, multinational environment, and leveraging host nation capabilities to increase USAREUR-AF’s operational reach. Dynamic Front includes more than 1,800 U.S. and 3,700 multi-national service members from 28 Allied and partner nations. (U.S. Army video by Sgt. Austin Steinborn)
+
+SHOTLIST
+

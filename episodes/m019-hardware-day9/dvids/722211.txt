@@ -1,0 +1,14 @@
+ID 722211
+TITLE KC-135 Refueling Mission
+DATE 2019-10-31T00:00:00-04:00
+UNIT 36th Wing
+LOCATION {'city': 'Andersen Air Force Base', 'state': '', 'country': 'Guam', 'country_abbreviation': 'GU'}
+DURATION 208
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/722211
+
+DESCRIPTION
+A KC-135 Stratotanker rotating in from Alabama takes off from Andersen Air Force Base, Guam for an in-air B-52 refueling mission October 31, 2019. B-Roll includes footage of pilots, B-52 refueling, boom operations, and some radio chatter.
+
+SHOTLIST
+

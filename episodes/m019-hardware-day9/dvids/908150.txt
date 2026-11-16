@@ -1,0 +1,14 @@
+ID 908150
+TITLE U-2 Dragon Lady B-Roll
+DATE 2023-10-11T00:00:00-04:00
+UNIT 9th Reconnaissance Wing
+LOCATION {'city': 'Beale Air Force Base', 'state': 'California', 'country': 'United States', 'state_abbreviation': 'CA', 'country_abbreviation': 'US'}
+DURATION 513
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/908150
+
+DESCRIPTION
+This B-Roll package features footage of the U-2 Dragon Lady reconnaissance aircraft taking off, landing, flying, and conducting touch-and-goes at Beale Air Force Base, California. It also features the chase cars necessary for U-2 landings. Footage was shot from the perspective inside a chase car as well as outside on the flight line. (U.S. Air Force video by Staff Sgt. Frederick Brown)
+
+SHOTLIST
+

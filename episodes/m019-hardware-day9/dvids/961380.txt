@@ -1,0 +1,14 @@
+ID 961380
+TITLE Marines lead combined MAAWS range during TRADEWINDS 25
+DATE 2025-05-03T05:37:00-04:00
+UNIT U.S. Army South
+LOCATION {'city': '', 'state': '', 'country': 'Trinidad And Tobago', 'country_abbreviation': 'TT'}
+DURATION 502
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/961380
+
+DESCRIPTION
+U.S. Marine Corps infantrymen assigned to Lima Company, 3rd Battalion, 25th Marines Regiment, lead a combined M3E1 Multi-role Anti-armor Anti-personnel Weapon System (MAAWS) range at the Tucker Valley shooting range in Chaguaramas, Trinidad and Tobago, during TRADEWINDS 25 (TW25) May 3, 2025. TW25 is a U.S. Southern Command-sponsored and Chairman of the Joint Chiefs of Staff-approved annual exercise that bolsters regional stability and demonstrates U.S. Joint Force coordination and interoperability with Allies and partners. (U.S. Army video by Sgt. John Russell)
+
+SHOTLIST
+

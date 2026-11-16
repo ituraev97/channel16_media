@@ -1,0 +1,14 @@
+ID 912680
+TITLE MAAWS at Fort McCoy
+DATE 2023-10-26T00:00:00-04:00
+UNIT Fort McCoy Multimedia Visual Information Branch
+LOCATION {'city': 'Fort McCoy', 'state': 'Wisconsin', 'country': 'United States', 'state_abbreviation': 'WI', 'country_abbreviation': 'US'}
+DURATION 343
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/912680
+
+DESCRIPTION
+Soldiers from the 32nd Infantry Brigade train using the M3E1 Multi-purpose Anti-Armor Anti-Personnel Weapons System (MAAWS) at Fort McCoy, Wis., Oct. 26, 2023. The MAAWS is an 84 mm reloadable, recoilless rifle designed to engage lightly armored targets at ranges out to 500 meters and soft targets out to 800 meters. U.S. Army video by Alex Knutson
+
+SHOTLIST
+

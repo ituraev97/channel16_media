@@ -1,0 +1,14 @@
+ID 598447
+TITLE 4-319th AFAR fires M119 105mm Howitzer
+DATE 2018-05-04T00:00:00-04:00
+UNIT Training Support Activity Europe
+LOCATION {'city': 'Grafenwoehr', 'state': 'Bayern', 'country': 'Germany', 'state_abbreviation': 'BY', 'country_abbreviation': 'DE'}
+DURATION 80
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/598447
+
+DESCRIPTION
+U.S. Army Paratroopers, assigned to Battery A, 4th Battalion, 319th Airborne Field Artillery Regiment, 173rd Airborne Brigade, fire a M119 105mm howitzer during a live fire exercise at the 7th Army Training Command's Grafenwoehr Training Area, Germany, May 4, 2018. (U.S. Army video by Gertrud Zach)
+
+SHOTLIST
+

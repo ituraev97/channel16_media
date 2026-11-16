@@ -1,0 +1,14 @@
+ID 1015203
+TITLE SLTE 4-26: 2nd Battalion, 2nd Marine Regiment Train with MAAWS
+DATE 2026-07-17T00:00:00-04:00
+UNIT 2nd Marine Division
+LOCATION {'city': 'Twentynine Palms', 'state': 'California', 'country': 'United States', 'state_abbreviation': 'CA', 'country_abbreviation': 'US'}
+DURATION 172
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/1015203
+
+DESCRIPTION
+U.S. Marines with 2nd Battalion, 2nd Marine Regiment, 2nd Marine Division conduct training with the M3E1 Carl Gustaf Recoilless Rifle on Range 104 during Service Level Training Exercise 4-26 on Marine Corps Air Ground Combat Center, Twentynine Palms, California, July 17, 2026. SLTE 4-26 is designed to be a challenging, realistic training environment that produces combat-ready forces capable of operating as an integrated Marine Air Ground Task Force across all domains of military operations. (U.S. Marine Corps video by Cpl. Isaac Llanezdelgado)
+
+SHOTLIST
+

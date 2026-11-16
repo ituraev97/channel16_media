@@ -1,0 +1,14 @@
+ID 409122
+TITLE U-2 Dragon Ladies landing at RAF Fairford
+DATE 2015-06-09T00:00:00-04:00
+UNIT 501st Combat Support Wing
+LOCATION {'city': 'RAF Fairford', 'state': 'Gloucestershire', 'country': 'United Kingdom', 'state_abbreviation': 'GLS', 'country_abbreviation': 'GB'}
+DURATION 577
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/409122
+
+DESCRIPTION
+A pair of U-2 Dragon Ladies landing at RAF Fairford, United Kingdom.
+
+SHOTLIST
+

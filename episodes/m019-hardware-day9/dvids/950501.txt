@@ -1,0 +1,14 @@
+ID 950501
+TITLE 4th Marines ACVs Splash with the USS Rushmore
+DATE 2025-01-16T00:00:00-05:00
+UNIT 3d Marine Division
+LOCATION {'city': '', 'state': '', 'country': 'Japan', 'country_abbreviation': 'JP'}
+DURATION 354
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/950501
+
+DESCRIPTION
+U.S. Marines operate Amphibious Combat Vehicles during Naval Integration Operations with the USS Rushmore (LSD-47) at Fleet Activities Sasebo, Japan, Jan. 16, 2025. Amphibious Combat Vehicles and LSD-47 rehearsed embarking and debarking vehicles while waterborne to validate the ACV as the Marine Corps’ primary ship-to-shore connector. The Marines shown are with 4th Marine Regiment, 3d Marine Division and are forward deployed in the Indo-Pacific under the Unit Deployment Program. (U.S. Marine Corps photo by Cpl. Adam Trump) 
+
+SHOTLIST
+

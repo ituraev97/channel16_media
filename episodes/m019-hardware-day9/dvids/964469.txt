@@ -1,0 +1,14 @@
+ID 964469
+TITLE B-Roll: ACVs splash into QUART
+DATE 2025-05-28T17:43:00-04:00
+UNIT 15th Marine Expeditionary Unit
+LOCATION {'city': 'Camp Pendleton', 'state': 'California', 'country': 'United States', 'state_abbreviation': 'CA', 'country_abbreviation': 'US'}
+DURATION 178
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/964469
+
+DESCRIPTION
+U.S. Marine Corps amphibious combat vehicles attached to Alpha Company, 3rd Assault Amphibian Battalion,1st Marine Division, prepare to conduct an open-water transit and board the amphibious dock landing ship USS Harpers Ferry (LSD 49) during Quarterly Underway Amphibious Readiness Training 25.3 at Marine Corps Base Camp Pendleton, May 28, 2025. QUART is a joint training exercise designed to develop and sustain essential amphibious readiness skills for effective operations in maritime environments while reinforcing the Navy-Maine Corps partnership. (U.S. Marine Corps video by Sgt. Patrick Katz)
+
+SHOTLIST
+

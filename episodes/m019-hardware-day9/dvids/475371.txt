@@ -1,0 +1,14 @@
+ID 475371
+TITLE KC-135 Refuels A-10’s
+DATE 2016-07-14T00:00:00-04:00
+UNIT 185th Air Refueling Wing, Iowa Air National Guard
+LOCATION {'city': '', 'state': 'Iowa', 'country': 'United States', 'state_abbreviation': 'IA', 'country_abbreviation': 'US'}
+DURATION 161
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/475371
+
+DESCRIPTION
+U.S. Air National Guard, In-Flight Refueling Specialist, Master Sgt. David Dietrich from the Iowa Air National Guard’s, 185th Air Refueling Wing, operates the boom from a KC-135 Stratotanker on July 14, 2016. Dietrich performs an in-air refueling near the Iowa-Missouri border for A-10 Thunderbolt’s from the 442nd Fighter Wing, Air Force Reserve, Whiteman Air Force Base, on their way to Cold Lake, Alberta Canada for the Cold Lake Air Show.(U.S. Air National Guard Motion Imagery by Iowa ANG Staff Sgt. David Asbra)
+
+SHOTLIST
+

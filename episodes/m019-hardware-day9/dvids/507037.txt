@@ -1,0 +1,14 @@
+ID 507037
+TITLE U-2 Broll Air Force Media
+DATE 2017-01-27T00:00:00-05:00
+UNIT Airman Magazine
+LOCATION {'city': '', 'state': 'Maryland', 'country': 'United States', 'state_abbreviation': 'MD', 'country_abbreviation': 'US'}
+DURATION 839
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/507037
+
+DESCRIPTION
+Beale Air Force Base, located in California, is home to the U-2. This aircraft was originally designed to fly high-altitude intelligence, surveillance and reconnaissance missions during the Cold War to gather intelligence on opposition forces. Today, the U-2S flies in support of a variety of missions from ground combat to disaster relief. A “mobile” follows behind the aircraft in a chase car to assist the pilot with altitude and position calls. Mobiles are U-2 pilots who assist during taxi, takeoff and landing. While on missions, U-2 pilots often see a natural occurrence called the terminator line. According to the National Oceanic and Atmospheric Administration (NOAA), it’s a line that separates day and night. It is also referred to as the "grey line" and the "twilight zone." It is a fuzzy line due to our atmosphere bending sunlight. This "ah ha" moment is a beautiful reminder of how small we are when skimming the edge of space. (U.S. Air Force video by Andrew Arthur Breese) (9 RW Public Affairs Beale AFB, CA)
+
+SHOTLIST
+

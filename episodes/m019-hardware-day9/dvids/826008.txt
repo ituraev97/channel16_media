@@ -1,0 +1,14 @@
+ID 826008
+TITLE KC-135 Refueling B-Roll
+DATE 2021-12-09T00:00:00-05:00
+UNIT 6th Air Refueling Wing
+LOCATION {'city': 'Tampa', 'state': 'Florida', 'country': 'United States', 'state_abbreviation': 'FL', 'country_abbreviation': 'US'}
+DURATION 671
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/826008
+
+DESCRIPTION
+Boom operators assigned to the 91st Air Refueling Squadron, MacDill Air Force Base, Florida, participate in a Total Force air refueling training mission over Alabama. The mission involved a 6th Air Refueling Wing KC-135 and four F-16 Fighting Falcon aircraft assigned to the Alabama Air National Guard’s 187th Fighter Wing, Dannelly Field, Alabama. (U.S. Air Force video by Airman 1st Class Lauren Cobin)
+
+SHOTLIST
+

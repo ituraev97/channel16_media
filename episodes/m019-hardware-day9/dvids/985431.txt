@@ -1,0 +1,14 @@
+ID 985431
+TITLE 31st MEU | BLT 1/7 conducts MAAWS Range
+DATE 2025-10-06T00:00:00-04:00
+UNIT 31st Marine Expeditionary Unit
+LOCATION {'city': 'Gotenba', 'state': 'Shizuoka', 'country': 'Japan', 'state_abbreviation': 'Shizuoka', 'country_abbreviation': 'JP'}
+DURATION 124
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/985431
+
+DESCRIPTION
+U.S. Marines with Battalion Landing Team 1st Battalion, 7th Marine Regiment, 31st Marine Expeditionary Unit, fire M3E1 Multi-Role Anti-Armor Anti-Personnel Weapon Systems during live-fire training at Combined Arms Training Center, Camp Fuji, Japan, Oct. 6, 2025. Marines conducted combined arms live-fire training to maintain operational readiness, tactical proficiency, and enhance lethality while operating within the first island chain. The 31st MEU, the Marine Corps’ only continuously forward-deployed MEU, provides a flexible and lethal force ready to perform a wide range of military operations as the premiere crisis response force in the Indo-Pacific region. (U.S. Marine Corps video by Lance Cpl. Victor Gurrola)
+
+SHOTLIST
+

@@ -1,0 +1,14 @@
+ID 985084
+TITLE ACVs with BLT 3/5 Splash from the USS Boxer
+DATE 2025-10-16T00:00:00-04:00
+UNIT 11th Marine Expeditionary Unit
+LOCATION {'city': 'Marine Corps Base Camp Pendleton', 'state': 'California', 'country': 'United States', 'state_abbreviation': 'CA', 'country_abbreviation': 'US'}
+DURATION 69
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/985084
+
+DESCRIPTION
+U.S. Marine Corps amphibious combat vehicles with Battalion Landing Team 3/5, 11th Marine Expeditionary Unit, depart from the well deck of the Wasp-class amphibious assault ship USS Boxer (LHD 4) in preparation for the Marine Corps 250th Birthday Amphibious Capabilities Demonstration at Marine Corps Base Camp Pendleton, California, Oct. 16, 2025. The Marine Corps 250th Birthday Amphibious Capabilities Demonstration is one of many events taking place across the country to showcase the Navy–Marine Corps team’s ability to project power from the sea and defend the Nation. For 250 years, Marines have been America’s expeditionary force-in-readiness — capable, credible, and committed to winning the Nation’s battles. (U.S. Marine Corps video by Lance Cpl. Nicole Stuart)
+
+SHOTLIST
+

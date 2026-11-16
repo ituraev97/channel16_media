@@ -1,0 +1,14 @@
+ID 1023514
+TITLE 25th CAB and DIVARTY Conduct Live-Fire Gun Raid
+DATE 2026-09-09T08:00:00-04:00
+UNIT 25th Combat Aviation Brigade
+LOCATION {'city': '', 'state': '', 'country': 'United States', 'country_abbreviation': 'US'}
+DURATION 345
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/1023514
+
+DESCRIPTION
+U.S. Soldiers assigned to the 3rd Battalion, 7th Field Artillery Regiment, 25th Infantry Division Artillery (DIVARTY) sling-load M119 Howitzers using UH-60 Black Hawks assigned to 2nd Battalion, 25th Aviation Regiment, 25th Combat Aviation Brigade, 25th Infantry Division to conduct a live-fire gun raid at Schofield Barracks, Hawaii, September 10, 2026. Gun raid exercises test rapid force projection, artillery table certifications, and operational readiness. (U.S. Army video by Sgt. Olivia Cowart)
+
+SHOTLIST
+

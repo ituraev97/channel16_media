@@ -1,0 +1,14 @@
+ID 975316
+TITLE B-Roll: U.S. Marines with 3rd Bn., 4th Marines, conduct MAAWS range training during Arctic Edge 25
+DATE 2025-08-20T00:00:00-04:00
+UNIT Arctic Edge
+LOCATION {'city': 'Joint Base Elmendorf-Richardson', 'state': 'Alaska', 'country': 'United States', 'state_abbreviation': 'AK', 'country_abbreviation': 'US'}
+DURATION 386
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/975316
+
+DESCRIPTION
+U.S. Marines with Kilo Company, 3rd Battalion, 4th Marine Regiment, 1st Marine Division conduct M3E1 multipurpose anti-armor anti-personnel weapon system (MAAWS) range training during ARCTIC EDGE 2025 (AE25) at Joint Base Elmendorf-Richardson, Alaska, Aug. 20, 2025. The ranges conducted during AE25 are designed to enhance the lethality of participating units and improve warfighting capabilities in austere environments. AE25 is a NORAD and U.S. Northern Command-led homeland defense exercise designed to improve readiness, demonstrate capabilities, and enhance Joint and Allied Force interoperability in the Arctic. (U.S. Marine Corps video by Cpl. Grant Schirmer)
+
+SHOTLIST
+

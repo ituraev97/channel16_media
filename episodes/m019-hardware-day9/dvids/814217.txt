@@ -1,0 +1,14 @@
+ID 814217
+TITLE 4-319th FA, 173rd AB live fire
+DATE 2021-09-10T00:00:00-04:00
+UNIT Training Support Activity Europe
+LOCATION {'city': 'Grafenwoehr', 'state': 'Bayern', 'country': 'Germany', 'state_abbreviation': 'BY', 'country_abbreviation': 'DE'}
+DURATION 139
+BEST (1920, 1080)
+URL https://www.dvidshub.net/video/814217
+
+DESCRIPTION
+U.S. Army Paratroopers, assigned to Battery A, 4th Battalion, 319th Airborne Field Artillery Regiment, 173rd Airborne Brigade, fire a M119 105mm howitzer during a live fire exercise at the 7th Army Training Command's Grafenwoehr Training Area, Germany, Sept 10, 2021.  (U.S. Army video by Gertrud Zach)
+
+SHOTLIST
+

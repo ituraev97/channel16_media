@@ -53,15 +53,18 @@ cd $P && node thumb16.mjs $EP/thumb.json $EP   # thumb_A + thumb_C
 - src_cuts.py can miss soft cuts and dissolves (seen in 995774, 1009153) and can flag muzzle flashes as cuts: check motion_check JUMPs frame by frame, add missed cuts to clips.json and remove flash 'cuts' inside a continuous firing shot.
 
 ## Performance rules
-Weekly review (Mondays). Source: Metricool TikTok post metrics (TKPO02/05/06/07/15), last 28 days. Each rule is backed by >= 3 videos; rules are recommendations, not schedule or content-rule changes.
-1. Longer wins: 71–75 s videos had median 530 views (n=4) vs 153 for 62–66 s (n=4) and 236 for 67–70 s (n=8). Aim for 70–75 s, using real facts/beats (never padding).
-2. The 15:00 ET slot was strongest (median 926, n=3; 09:00 284, n=4; 11:00 235, n=4; 17:00 258, n=3). Put the day's strongest system/hook at 15:00.
-3. A themed run beats unrelated singles: the five Hurricane Florence videos had median 318 vs 193 for seven unrelated boat/sea rescues. For military, consider a daily theme (e.g. "navy guns day") once data confirms.
-4. A single unusual camera view or a vivid number in the caption performed best (top 3: 958, 926, 742 — cable camera, cruise-ship hoist, out-of-medication). Lead with the most unusual shot plus a number.
-Caveats: all 16 data points are rescue videos (Nov 4–8); avg time watched (TKPO15) was not returned by Metricool. Military videos start Nov 10; re-check every rule against them next Monday and drop any that do not hold.
+Weekly review (Mondays). Source: Metricool TikTok post metrics (TKPO02/05/06/07; TKPO15 avg watch time still not returned), last 28 days. Each rule is backed by >= 3 videos; rules are recommendations, not schedule or content-rule changes. Data 2026-11-16: 23 mature military videos (Nov 10–14, median 241 views, mean 295) vs 18 rescue videos (Nov 4–8, median 310).
+1. Guns and cannons firing win: M777 583, Mk 45 410, A-10 GAU-8 388, Abrams 387, HIMARS 348 (median of all gun/cannon/rocket-artillery videos 387, n=7 incl. Paladin 200, Bradley 217). Make at least two of the five daily videos a gun/cannon/artillery firing.
+2. Missile launches and missile-defense tests are the weakest: THAAD 174, Trident 154, SM-2 130, Patriot 209, Minuteman 231 (median 174, n=5; all at or below the overall median). Max one missile/missile-defense video per day, and not in the 15:00 slot.
+3. Bombers beat fighter demos: B-2 refueling 895, B-52H 397, B-1B 288 (median 397, n=3) vs F-35B 148, F-22 186, CV-22 209 (median 186, n=3). Prefer heavy aircraft with an unusual view (tanker boom, cockpit, deck) over fighter flybys.
+4. Length is not the driver for military: 62–67 s median 348 (n=5), 68–71 s 241 (n=7), 72–75 s 209 (n=11). Last week's "longer wins" did not hold; stop stretching to 75 s — 64–72 s is fine, as long as every beat is real.
+5. Slots matter little: medians 09:00 209 (n=3), 11:00 217 (n=5), 15:00 288 (n=5), 17:00 260 (n=5), 21:00 241 (n=5). Keep the strongest system at 15:00 (still the best median) and the second strongest at 21:00 (two of the top four).
+Dropped: "themed run" and "unusual camera + number" rules (rescue-era, not testable on military data yet).
+Caveats: each day's views are 1–6 days old at review time; small samples; categories overlap (A-10 counted as gun). Recheck next Monday.
 
 Changelog
 - 2026-11-09: first version from 16 rescue TikToks (median 265 views); no military data yet.
+- 2026-11-16: rewritten from 23 military TikToks (Nov 10–14): guns/cannons > bombers > others > missiles; length rule dropped.
 
 ## 5. QA (do not skip)
 - motion_check: 0 issues (repeats, jumps, graphic drift). Phone/FLIR sources with duplicated frames: make a de-duplicated copy (mpdecimate + minterpolate) under a new id (939855d, 1014541g). Re-run on each Short too, and ffprobe each Short: duration must be ≥ 61.5 s.
