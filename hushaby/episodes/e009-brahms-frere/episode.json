@@ -1,0 +1,7 @@
+{"id": "e009-brahms-frere",
+ "long": {"seconds": 810, "seed": 113, "tunes": ["brahms", "frere"], "insts": ["harp", "musicbox", "piano", "celesta", "musicbox"],
+   "shifts": [-2, 1, 3, -1], "tempo": [73, 60], "noise": {"kind": "none"},
+   "scene": {"char": "kitten", "pal": "dusk", "seed": 109},
+   "thumb": {"l1": "Brahms Lullaby", "l2": "& Are You Sleeping", "badge": "Music Box · 13 min", "char": "kitten", "pal": "dusk"}},
+ "short": {"tune": "frere", "inst": "musicbox", "tempo": 58, "seconds": 39, "seed": 127, "shift": -3, "caption": "Are You Sleeping,\nBrother John?",
+   "scene": {"char": "bunny", "pal": "ocean", "seed": 131}}}
