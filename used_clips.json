@@ -516,5 +516,41 @@
    "409122"
   ],
   "note": "Downloaded but not used: 612573, 612574 (licensed music), 675941, 675942, 806414 (Mk 110 57 mm, topic dropped), 743986 (.50-cal), 858643, 858644 (SeaRAM), 953891 (mixes M777/M119), 999235, 507037 only pressure-suit shots used"
+ },
+ "m020-hardware-day10": {
+  "t1": [
+   "793594",
+   "552143",
+   "683577",
+   "781629"
+  ],
+  "t2": [
+   "456993",
+   "793069",
+   "894384",
+   "456987",
+   "807962"
+  ],
+  "t3": [
+   "853869",
+   "919069",
+   "954888",
+   "1025883"
+  ],
+  "t4": [
+   "841166",
+   "972060",
+   "916383",
+   "853815",
+   "1011332"
+  ],
+  "t5": [
+   "958038",
+   "986704",
+   "1028104",
+   "1028110",
+   "1019391"
+  ],
+  "note": "Downloaded but not used: 1019392 (too dark), 778946 (burned-in text/watermark), 837621, 837622 (music/branding), 974894, 450626, 513607 (360 cam), 899154 (unit logo overlay, 50p), 919943 (lower thirds), 668997 (480p), 572671 (title graphics), 862679 (deployed location), 404844 (graphics/interviews), 815067, 586564 (burned-in captions), 1027645 (dark)"
  }
 }

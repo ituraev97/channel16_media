@@ -1,0 +1,11 @@
+DVIDS video:916383
+Title: U.S. Marines utilize CH-53K King Stallion for HST exercise
+Date: 2024-02-22T00:00:00-05:00
+URL: https://www.dvidshub.net/video/916383/us-marines-utilize-ch-53k-king-stallion-hst-exercise
+Unit: Marine Corps Combat Service Support Schools
+Credit: [{'id': 1819036, 'name': 'Marissa Seaman', 'rank': 'Lance Cpl.', 'url': 'https://www.dvidshub.net/portfolio/1819036'}]
+Location: None, None, None
+Duration: 213
+File: 1920x1080 0
+
+U.S. Marines with Logistics Operations School conduct a helicopter support team exercise at Marine Corps Base Camp Lejeune, North Carolina, Feb. 22, 2024. The exercise is designed to prepare Marines to manage activities at landing zones: facilitate the pickup, movement and landing of helicopter-borne troops, equipment, and supplies. (U.S. Marine Corps video by Lance Cpl. Marissa Seaman)

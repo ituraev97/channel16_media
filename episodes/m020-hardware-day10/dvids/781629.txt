@@ -1,0 +1,11 @@
+DVIDS video:781629
+Title: C-5M Super Galaxy refueled by KC-46 Pegasus
+Date: 2020-12-14T00:00:00-05:00
+URL: https://www.dvidshub.net/video/781629/c-5m-super-galaxy-refueled-kc-46-pegasus
+Unit: 60th Air Mobility Wing
+Credit: [{'id': 1673150, 'name': 'Hun Chustine Minoda', 'rank': '', 'url': 'https://www.dvidshub.net/portfolio/1673150'}]
+Location: None, None, None
+Duration: 135
+File: 1920x1080 6298
+
+U.S. Airmen from the 22nd Airlift Squadron, fly a C-5M Super Galaxy out of Travis Air Force Base, California, to conduct an air refueling training mission over Wyoming, Dec. 14, 2020. A KC-46 Pegasus from the 931st Air Refueling Wing, McConnell AFB, Kansas, refueled the C5-M.

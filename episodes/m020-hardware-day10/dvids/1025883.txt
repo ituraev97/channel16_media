@@ -1,0 +1,11 @@
+DVIDS video:1025883
+Title: 120mm Mortar Liv-Fire Exercise Horizontal EPK
+Date: 2026-07-11T00:00:00-04:00
+URL: https://www.dvidshub.net/video/1025883/120mm-mortar-liv-fire-exercise-horizontal-epk
+Unit: Fort Benning Public Affairs Office
+Credit: [{'id': 1761362, 'name': 'Payton King', 'rank': '', 'url': 'https://www.dvidshub.net/portfolio/1761362'}]
+Location: None, None, None
+Duration: 111
+File: 1920x1080 0
+
+Trainees conduct an 81mm and 120mm mortar system live-fire exercise June 11, 2026 at Skidgel Range on Fort Benning, Georgia.

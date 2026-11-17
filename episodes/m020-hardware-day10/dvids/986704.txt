@@ -1,0 +1,11 @@
+DVIDS video:986704
+Title: Flight Deck Operations aboard USS George H.W. Bush
+Date: 2025-11-08T00:00:00-05:00
+URL: https://www.dvidshub.net/video/986704/flight-deck-operations-aboard-uss-george-hw-bush
+Unit: USS George H.W. Bush (CVN 77)
+Credit: [{'id': 1817226, 'name': 'Jayden Brown', 'rank': 'Petty Officer 3rd Class', 'url': 'https://www.dvidshub.net/portfolio/1817226'}]
+Location: None, None, None
+Duration: 65
+File: 1920x1080 0
+
+251108-N-HS821-1001 ATLANTIC OCEAN. (Nov. 8, 2025) Pilots assigned to the “Gladiators” of Strike Fighter Squadron (VFA) 106 conduct F/A-18E Super Hornet carrier qualifications aboard the Nimitz-class aircraft carrier USS George H.W. Bush (CVN 77). George H.W. Bush is underway conducting carrier qualifications and routine operations in the Atlantic Ocean. (U.S. Navy video by Mass Communication Specialist 3rd Class Jayden Brown)

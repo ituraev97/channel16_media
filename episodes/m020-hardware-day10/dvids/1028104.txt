@@ -1,0 +1,11 @@
+DVIDS video:1028104
+Title: Nimitz Conducts Carrier Qualifications with VFA 106
+Date: 2026-10-29T03:00:00-04:00
+URL: https://www.dvidshub.net/video/1028104/nimitz-conducts-carrier-qualifications-with-vfa-106
+Unit: USS Nimitz (CVN 68)
+Credit: [{'id': 1852432, 'name': 'Gilecia Dias', 'rank': 'Seaman', 'url': 'https://www.dvidshub.net/portfolio/1852432'}]
+Location: None, None, None
+Duration: 77
+File: 1920x1080 0
+
+Aircrafts launch and recover from the flight deck of Nimitz-class aircraft carrier USS Nimitz (CVN 68) during carrier qualifications for Strike Fighter Squadron (VFA) 106 in the Atlantic Ocean, Oct. 29, 2026. Nimitz is underway in the U.S. 2nd Fleet area of operations in support of Commander, Naval Air Force Atlantic training and readiness. (U.S. Navy video by Mass Communication Specialist 3rd Class Gilecia Dias)

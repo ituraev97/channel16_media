@@ -1,0 +1,11 @@
+DVIDS video:683577
+Title: C-5M Super Galaxy Takes off from Barksdale
+Date: 2019-05-11T00:00:00-04:00
+URL: https://www.dvidshub.net/video/683577/c-5m-super-galaxy-takes-off-barksdale
+Unit: 2nd Bomb Wing
+Credit: [{'id': 1388936, 'name': 'Cassandra Johnson', 'rank': 'Senior Airman', 'url': 'https://www.dvidshub.net/portfolio/1388936'}]
+Location: None, None, None
+Duration: 148
+File: 1920x1080 6339
+
+A C-5M Super Galaxy assigned to the 436th Airlift Wing, Dover Air Force Base, Del., takes off for a Bomber Task Force deployment after retrieving equipment from Barksdale Air Force Base, La., May 11, 2019. The Bomber Task Force deployed in order to defend American forces and interests.

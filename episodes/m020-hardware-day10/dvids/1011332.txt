@@ -1,0 +1,11 @@
+DVIDS video:1011332
+Title: CH-53K King Stallion Perform DLQs Aboard Kearsarge
+Date: 2026-06-11T00:00:00-04:00
+URL: https://www.dvidshub.net/video/1011332/ch-53k-king-stallion-perform-dlqs-aboard-kearsarge
+Unit: USS Kearsarge (LHD 3)
+Credit: [{'id': 1921532, 'name': 'Andrew Clarke', 'rank': 'Seaman Recruit', 'url': 'https://www.dvidshub.net/portfolio/1921532'}]
+Location: None, None, None
+Duration: 53
+File: 1920x1080 0
+
+260611-N-DA690-1001 ATLANTIC OCEAN (June 11, 2026) CH-53K King Stallion aircraft, assigned to Marine Heavy Helicopter Squadron (HMH) 461, perform deck landing qualifications on the flight deck of Wasp-class amphibious assault ship USS Kearsarge (LHD 3), June 11, 2026. Kearsarge is underway conducting Type Commander’s Amphibious Training (TCAT), a military exercise designed to enhance mobility and integration between the U.S. Marine Corps and U.S. Navy. The amphibious force is an integrated powerhouse providing sea, land, and air operations, giving geographic combatant commanders a more flexible, agile force for aggregated or dis-aggregated operations across the globe. (U.S. Navy video by Mass Communication Specialist Seaman Apprentice Andrew Clarke)

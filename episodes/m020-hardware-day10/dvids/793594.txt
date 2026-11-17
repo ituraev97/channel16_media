@@ -1,0 +1,11 @@
+DVIDS video:793594
+Title: B-Roll of a C-5M Super Galaxy
+Date: 2021-05-05T00:00:00-04:00
+URL: https://www.dvidshub.net/video/793594/b-roll-c-5m-super-galaxy
+Unit: 60th Air Mobility Wing
+Credit: [{'id': 1676496, 'name': 'Alexander Merchak', 'rank': 'Airman 1st Class', 'url': 'https://www.dvidshub.net/portfolio/1676496'}]
+Location: None, None, None
+Duration: 158
+File: 1920x1080 6271
+
+Interior and exterior shots of a C-5M Super Galaxy May 5, 2021, at Travis Air Force Base, California.

@@ -1,0 +1,11 @@
+DVIDS video:853815
+Title: Marines fly a CH-53K King Stallion in an exercise for the first time
+Date: 2022-08-08T00:00:00-04:00
+URL: https://www.dvidshub.net/video/853815/marines-fly-ch-53k-king-stallion-exercise-first-time
+Unit: 2nd Marine Aircraft Wing
+Credit: [{'id': 1690931, 'name': 'Adam Henke', 'rank': 'Cpl.', 'url': 'https://www.dvidshub.net/portfolio/1690931'}]
+Location: None, None, None
+Duration: 93
+File: 1920x1080 0
+
+U.S. Marines with Marine Heavy Helicopter Squadron (HMH) 461 fly a CH-53K King Stallion at Mountain Home Air Force Base, Idaho, Aug. 8, 2022. This was the first time the Marine Corps deployed the King Stallion in an exercise. HMH-461 is a subordinate unit of 2nd Marine Aircraft Wing, the aviation combat element of II Marine Expeditionary Force. (U.S. Marine Corps video by Cpl. Adam Henke)

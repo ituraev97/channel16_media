@@ -1,0 +1,11 @@
+DVIDS video:634732
+Title: 9th Airlift Squadron flies C-5M Super Galaxy
+Date: 2018-10-17T00:00:00-04:00
+URL: https://www.dvidshub.net/video/634732/9th-airlift-squadron-flies-c-5m-super-galaxy
+Unit: 436th Airlift Wing
+Credit: [{'id': 1136845, 'name': 'Laura Beckley', 'rank': 'Tech. Sgt.', 'url': 'https://www.dvidshub.net/portfolio/1136845'}]
+Location: None, None, None
+Duration: 265
+File: 1920x1080 6208
+
+A C-5M Super Galaxy aircrew assigned to the 9th Airlift Squadron flies local patterns and performs touch-and-goes in Atlantic City, N.J., and Dover AFB , Del. on 17 October, 2018. (U.S. Air Force video by Tech. Sgt. Laura Beckley).

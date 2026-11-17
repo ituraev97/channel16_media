@@ -1,0 +1,11 @@
+DVIDS video:552143
+Title: C-5M Super Galaxy Makes a Special Delivery
+Date: 2017-09-11T00:00:00-04:00
+URL: https://www.dvidshub.net/video/552143/c-5m-super-galaxy-makes-special-delivery
+Unit: 1st Combat Camera Squadron
+Credit: [{'id': 1278228, 'name': 'James Merriman', 'rank': 'Senior Airman', 'url': 'https://www.dvidshub.net/portfolio/1278228'}]
+Location: None, None, None
+Duration: 200
+File: 1920x1080 6153
+
+C-5M Super Galaxy aircrew deliver cargo at Royal Air Force Fairford, United Kingdom, September 11, 2017, supporting bomber assurance and deterrence operations. U.S. Strategic Command bomber forces regularly conduct combined theater security cooperation engagements with allies and partners, demonstrating the U.S. capability to command, control and conduct bomber missions across the globe. Bomber missions demonstrate the credibility and flexibility of our forces to address today’s complex, dynamic and volatile global security environment. (U.S. Air Force video by Senior Airman James Merriman)

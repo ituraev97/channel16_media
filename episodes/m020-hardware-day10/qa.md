@@ -1,0 +1,7 @@
+# m020 QA (2026-11-17)
+- Durations (ffprobe): t1 72.0 s, t2 72.9 s, t3 69.8 s, t4 67.3 s, t5 69.4 s; loudness −14.2…−14.4 LUFS; 1080x1920, 36–80 MB.
+- Slots (Thu Nov 19, 2026 ET): t1 C-5M 09:00, t2 GAU-17/UH-1Y 11:00, t3 M120 mortar 15:00, t4 CH-53K 17:00, t5 carrier traps 21:00.
+- motion_check: 0 issues on t1, t2, t4, t5. t3: one JUMP at 0.67 s = the real muzzle blast of the 120 mm (853869 continuous shot 55.1–69.5 s, checked frame by frame; raw footage, no cut). t1 first build had a JUMP at 51.7 s = a caption change over a near-static dark cockpit shot (raw.mp4 = 0 issues) → shot moved to the moving refuel view (781629 108.3), rebuilt, 0 issues.
+- Contact sheets (every 2.5 s) checked: t2 hook text was wider than the frame ("UP TO 4,000 ROUNDS A MINUTE") → "UP TO 4,000 A MINUTE"; t3 hook shortened to "FIRES WITH NO TRIGGER"; t4 hook crop re-centred on the CH-53K + LAV (cx .30); t1 Fairford landing crop moved to the aircraft (cx .95; it sits under the label for ~2.7 s). No interviews, no unit logos/title cards, no burned-in captions; 841166 20–56 s (Israeli Air Force passengers) not used.
+- Fact-check: independent agent, all 5 videos, every URL opened + frames at every shot. See sources.md "Independent fact-check" for applied fixes.
+- 0.5 s frames: t1 C-5M nose doors open (Travis), t2 GAU-17 firing with tracer streak (Chocolate Mountain range), t3 120 mm tube in smoke at the moment of firing (Grafenwoehr), t4 CH-53K carrying an LAV-25 (Camp Lejeune), t5 F/A-18 trapping aboard USS George H.W. Bush.

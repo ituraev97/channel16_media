@@ -1,0 +1,11 @@
+DVIDS video:958038
+Title: Flight Operations
+Date: 2025-03-18T00:00:00-04:00
+URL: https://www.dvidshub.net/video/958038/flight-operations
+Unit: USS George H.W. Bush (CVN 77)
+Credit: [{'id': 1810058, 'name': 'Mitchell Mason', 'rank': 'Petty Officer 3rd Class', 'url': 'https://www.dvidshub.net/portfolio/1810058'}, {'id': 1767847, 'name': 'Christina Lewis', 'rank': 'Petty Officer 2nd Class', 'url': 'https://www.dvidshub.net/portfolio/1767847'}]
+Location: None, None, None
+Duration: 131
+File: 1920x1080 0
+
+250318-N-UJ313-1001 ATLANTIC OCEAN (March 18, 2025) Sailors aboard the Nimitz-class aircraft carrier USS George H. W. Bush (CVN77) conduct flight deck operations. USS George H. W. Bush is conducting carrier qualifications in the Atlantic Ocean. (U.S. Navy video by Mass Communication Specialist 2nd Class Christina Lewis and Mass Communication Specialist 3rd Class Mitchell Mason)

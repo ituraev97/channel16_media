@@ -1,0 +1,11 @@
+DVIDS video:1019391
+Title: George Washington's 200,000th Arresting Gear Landing
+Date: 2026-08-18T12:00:00-04:00
+URL: https://www.dvidshub.net/video/1019391/george-washingtons-200000th-arresting-gear-landing
+Unit: USS GEORGE WASHINGTON (CVN 73)
+Credit: [{'id': 1773833, 'name': 'Tyler Crowley', 'rank': 'Petty Officer 2nd Class', 'url': 'https://www.dvidshub.net/portfolio/1773833'}]
+Location: None, None, None
+Duration: 48
+File: 1920x1080 0
+
+A video highlighting the 200,000th arresting gear landing onboard Nimitz-class aircraft carrier USS George Washington (CVN 73) while underway in the Indian Ocean, Aug. 18, 2026. George Washington, operating in the U.S. Navy's premier forward-deployed aircraft carrier, a long-standing symbol of the United States' commitment to maintaining a free and open Indo-Pacific, while operating alongside allies and partners across the U.S. Navy's largest numbered fleet. (U.S. Navy video by Mass Communication Specialist 2nd Class Tyler Crowley)
