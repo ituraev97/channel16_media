@@ -1,5 +1,11 @@
 # CHANNEL 16 — production runbook
 
+> **LATEST OWNER DECISIONS — read first, they override older sections below (2026-11-24)**
+> - Thumbnails v6 (section "Thumbnails v6" near the end): thumb_A and thumb_B are made with `tools/thumbkit/thumbkit.py` + AI pictures from `tools/img_client.py` (request them at the START of the run); only thumb_C uses this channel's old generator. Every run must at least request the AI pictures; if they do not arrive in time, say so in the report.
+> - EMOTION FIRST: every thumbnail shows a strong emotion (rage, shock, fear, disbelief) — never a calm face; the AI may only re-light a real face, never change it.
+> - Promise rule + subtitles + minimal bleeps (section "Promise, clips & subtitles" at the end).
+
+
 One run = one long video (8–12 min, English) + 5 vertical Shorts (each 62–75 s, posted to YouTube Shorts AND TikTok). Read the Projects doc `claude/channel16-bible.md` first (rules, brand, voice, formats). Episode `episodes/a001-found/` is the reference for structure, pacing and style.
 
 ## 1. Setup (fresh container)
