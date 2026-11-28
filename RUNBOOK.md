@@ -1,5 +1,11 @@
 # CHANNEL 16 — production runbook
 
+> - **VOICE RULES (owner 2026-11-28): work HARD on intonation, pace and pronunciation; this channel has its OWN voice — Kokoro am_eric (directed per line). Never use another channel's voice.**
+>   Intonation: give every line a tone/energy (≈25% energetic on reveals, numbers, verdicts; ≈15% calm for context; rest normal); short sentences of varied length, the key word at the end, commas where a speaker breathes; never one flat tone for a whole video. After voicing measure the take: pitch variation ≥ 4 semitones, loudness range ≥ 6 LU — re-voice a flat take.
+>   Pace: long narration 150–165 wpm (sleep content excepted: keep its slow pace), Shorts 160–180 wpm; never speed long narration up to fit a duration — cut words; no silence > 0.6 s except one deliberate beat (sleep pipeline: its verse pauses stay).
+>   Pronunciation: numbers, dates, money, units written out in words in the TTS text; every unclear name/place/foreign word gets a phonetic respelling for the voice only (real spelling in captions/titles); keep them in `voice_lexicon.md` and reuse them; acronyms as letters with hyphens (F-B-I) unless said as a word. Speech-recognition check: any misread name → re-voice before rendering.
+
+
 > **LATEST OWNER DECISIONS — read first, they override older sections below (2026-11-24)**
 > - Thumbnails v6 (section "Thumbnails v6" near the end): thumb_A and thumb_B are made with `tools/thumbkit/thumbkit.py` + AI pictures from `tools/img_client.py` (request them at the START of the run); only thumb_C uses this channel's old generator. Every run must at least request the AI pictures; if they do not arrive in time, say so in the report.
 > - EMOTION FIRST: every thumbnail shows a strong emotion (rage, shock, fear, disbelief) — never a calm face; the AI may only re-light a real face, never change it.
